@@ -1,0 +1,38 @@
+@media screen and (max-width: 500px){
+    .main .p-left p, .main .p-right p, .main .p-middle p{
+        text-align: left;
+    }
+}
+
+.main{
+    flex:1 1 0;
+    background-color: #f0f0f0;
+    height: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 35px;
+}
+.main .ui.card, .ui.cards>.card{
+    width:100%;
+    box-shadow: none;
+    border-radius:0;
+}
+.main .ui.card>.content>.header, .main .ui.cards>.card>.content>.header{
+    font-family: "Raleway";
+    font-weight: 300;
+}
+.main .ui.card>.content, .ui.cards>.card>.content{
+    border-top: none;
+}
+
+.main .p-left p{
+    text-align: left;
+}
+
+.main .p-right p{
+    text-align:right;
+}
+
+.main .p-middle p{
+    text-align:center;
+}

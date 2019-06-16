@@ -1,0 +1,85 @@
+[
+    {
+     "menu":"Dashboard",
+      "submenu":[
+        {
+          "heading":[],
+          "links":["Apples", "Pears", "Orange"]
+        }
+        
+    ]
+    },
+
+    {
+     "menu":"Organization",
+      "submenu":[
+          {
+            "heading":["BUSINESS"],
+            "links":["Business Units"]
+          },
+          {
+            "heading":["ACCESS MANAGEMENT"],
+            "links":["Users","Roles", "Credential Vault"]
+          },
+          {
+            "heading":["GENERAL"],
+            "links":["Email Configuration"]
+          }
+      ]
+    },
+
+    {
+     "menu":"Output",
+      "submenu":[
+        {
+          "heading":[],
+          "links":["Opportunities", "Considered", "Plan", "Sketch","Monitor"]
+        }
+        
+    ]
+    },
+
+    {
+     "menu":"Services",
+      "submenu":[
+        {
+          "heading":[],
+          "links":["Cortex", "Rails"]
+        }
+        
+    ]
+    },
+
+    {
+      "menu":"Messages",
+      "submenu":[
+        {
+          "heading":[],
+          "links":["Inbox", "Email Details", "Email Compose"]
+        }
+        
+      ]
+    },
+
+    {
+      "menu":"Audit",
+      "submenu":[
+        {
+          "heading":[],
+          "links":["Apps", "Platform"]
+        }
+        
+    ] 
+    },
+
+    {
+      "menu":"Map",
+      "submenu":[
+        {
+          "heading":"",
+          "links":["Google Maps", "Vector Maps"]
+        } 
+    ]
+    }
+
+]

@@ -1,0 +1,8 @@
+
+.recent .ui.menu .ui.list .list>.item, .ui.menu .ui.list>.item{
+    display: flex;
+    overflow: hidden;
+}
+.recent .ui.list .list>.item .description, .ui.list>.item .description{
+    color: #999999;
+}

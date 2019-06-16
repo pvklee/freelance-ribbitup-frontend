@@ -1,0 +1,16 @@
+.notifications{
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+.notifications .ui.list .list>.item a.header, .ui.list>.item a.header{
+    color: #0177d7 !important;
+}
+
+.notifications .ui.menu .ui.list .list>.item, .ui.menu .ui.list>.item:hover{
+  background: rgba(1,119,215,0.4);
+}
+
+.notifications .ui.list .list>.item>i.icon, .ui.list>.item>i.icon {
+  color: #0177d7 !important;
+}

@@ -1,0 +1,15 @@
+.bugs .ui.accordion .title:not(.ui){
+    padding-top:20px;
+    color: #fff;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif
+    
+}
+
+.bugs .ui.accordion .accordion .active.content, .ui.accordion .active.content{
+    color:#fff;
+    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+    margin-left:20px;
+    height: auto;
+}

@@ -1,0 +1,108 @@
+.sidebar-right .ui.inverted.menu{
+    background: #484747;
+    font-family: "Raleway";
+    font-weight:300;
+}
+.sidebar-right .ui.card{
+    margin: 0px;
+}
+
+.sidebar-right .ui.card.user-info{
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom:none;
+    background-color: #424141;
+}
+
+.sidebar-right .ui.card>.image, .ui.cards>.card>.image{
+    border-radius: 50% !important;
+    width: 76px;
+    height: 76px;
+    margin-bottom: 20px;
+    background: transparent;
+    align-self: center;
+}
+
+.sidebar-right .ui.card>.content>.header:not(.ui), .ui.cards>.card>.content>.header:not(.ui){
+    color: #e1e1e1;
+    font-size: 14px;
+    font-family: "Raleway";
+    font-weight:300;
+}
+
+.sidebar-right .ui.card.user-info .status{
+    border-radius: 50%;
+    height: 7px;
+    width: 7px;
+    background-color: #00b777;
+    display: inline-block;
+    margin-left: 50%;
+    position: relative;
+    top: -19px;
+}
+
+.sidebar-right .ui.card>.content>.description, .ui.cards>.card>.content>.description{
+    color:#fff;
+}
+
+.sidebar-right .ui.card, .ui.cards>.card {
+    box-shadow: none;
+    border-radius:0px;
+}
+.sidebar-right .ui.card>.content, .ui.cards>.card>.content{
+    border-top: none;
+}
+
+.sidebar-right .ui.text.menu {
+    background-color: #424141;
+    border-bottom: 0;
+    margin: 0px
+}
+
+.sidebar-right .ui.inverted.menu .active.item, .sidebar-right .ui.vertical.inverted.menu .menu .item:hover{
+    color: #fff;
+    background: transparent;
+}
+.sidebar-right .ui.vertical.inverted.menu .menu .item{
+    padding: 8px;
+    font-size: 20px;
+}
+.sidebar-right .ui.menu .active.item>i.icon{
+    color:#0177d7;
+}
+
+.sidebar-right .ui.segment{
+    margin: 0px;
+    background: #484747;
+    box-shadow: none;
+}
+
+.sidebar-right .ui.header{
+    color: #e1e1e1;
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #6d6b6b;
+    padding-left: 5px;
+    margin-bottom: 25px;
+    margin-top: 18px;
+}
+.sidebar-right .ui.list .list>.item .description, .ui.list>.item .description{
+    color:#fff;
+}
+
+.sidebar-right .ui.large.search{
+    position:fixed;
+    bottom: 0;
+    background: #272626;;
+}
+
+.sidebar-right .ui.large.search > input{
+    background: transparent;
+    width:100%;
+    border: none;
+}
+
+.sidebar-right .ui.icon.input>i.icon{
+    color:#6d6b6b;
+}

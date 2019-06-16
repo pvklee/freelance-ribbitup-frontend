@@ -1,0 +1,67 @@
+﻿{
+  "hostname": "my.api.mockaroo.com",
+  "port": "",
+  "method": "https",
+  "services": [
+    {
+      "comment": "",
+      "name": "Login",
+      "id": "800",
+      "method": "POST",
+      "url": "/rails/security/login/data.json?key=62940fa0",
+      "params": [
+        {
+          "key": ""
+        },
+        {
+          "key": ""
+        }
+      ]
+    },
+    {
+      "comment": "",
+      "name": "Users",
+      "id": "801",
+      "method": "POST",
+      "url": "/rails/security/users/data.json?key=62940fa0",
+      "params": [
+        {
+          "key": ""
+        },
+        {
+          "key": ""
+        }
+      ]
+    },
+    {
+      "comment": "",
+      "name": "messages",
+      "id": "802",
+      "method": "POST",
+      "url": "/rails/messages/data.json?key=62940fa0",
+      "params": [
+        {
+          "key": ""
+        },
+        {
+          "key": ""
+        }
+      ]
+    },
+    {
+      "comment": "",
+      "name": "notification",
+      "id": "803",
+      "method": "POST",
+      "url": "/rails/notifications/data.json?key=62940fa0",
+      "params": [
+        {
+          "key": ""
+        },
+        {
+          "key": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+.announcement .ui.list .list>.item a.header, .ui.list>.item a.header {
+    color: #ffffff !important;
+    padding-top: 3px;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif
+}
+
+.announcement .ui.list .list>.item .description, .ui.list>.item .description{
+    color: #b3b3b3 !important;
+    margin-top: 5px;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding:5px;
+}

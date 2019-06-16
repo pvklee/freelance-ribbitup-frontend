@@ -1,0 +1,42 @@
+.sidebar-hover{
+    display: block;
+    position: fixed;
+    left: 100px;
+    top: 0;
+    height: 100%;
+    background-color: #484747;
+    z-index: 1031;
+    padding: 0;
+    table-layout: fixed;
+    list-style: none;
+    width: 280px;
+}
+
+.sidebar-hover .title{
+    color: #ffffff;
+    border-bottom: 1px solid #6d6b6b;
+    font-size: 26px;
+    font-weight: 300;
+    margin: 0 25px 0;
+    padding-bottom: 18px;
+    padding-top: 25px;
+}
+
+.sidebar-hover .hover-title{
+    font-size: 15px;
+    font-weight: 400;
+    color: #0177d7;
+    padding: 10px 25px;
+}
+
+.sidebar-hover .item.hover-links{
+    padding: 10px 25px;
+    color: #b3b3b3;
+    font-size: 13px;
+    display: block;
+    font-weight: 300;
+}
+
+/* .sidebar-hover .ui.list>.item:hover{
+   background: #424141
+} */
