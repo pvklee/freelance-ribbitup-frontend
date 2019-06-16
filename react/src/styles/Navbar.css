@@ -20,16 +20,27 @@
   font-family: 'Raleway', sans-serif;
   margin-bottom: 0;
   /* background: #ef6262; */
-  background: #0177d7;
+  background: #00853E;
   border-radius: 0;
 }
 .ui.menu .dropdown.item .menu{
   min-width: 100%;
 }
 
+/* Margin after first menu item */
+.ui.menu .left{
+  margin-left: 20px;
+}
+
+/* Icon size bigger */
+.ui.menu .icon{
+}
+
+/* change font weight */
 .ui.menu .item, .navigation .ui.menu .active.item>i.icon, .ui.link.menu .item:hover, .ui.menu .dropdown.item:hover, .ui.menu .link.item:hover, .ui.menu a.item:hover{
   color:#fff;
   font-size:14px;
+  font-weight: 500;
 }
 
 .ui.menu .active.item{

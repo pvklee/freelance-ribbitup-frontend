@@ -62,25 +62,28 @@ import { Image, Menu, Sidebar, Responsive, Segment, Dropdown, Sticky, Ref, Label
     <Menu.Item header className="brand-name">
       <Image size="mini" src={logo} centered/>
     </Menu.Item>
-      <Menu.Item name="Home" />
-      <Dropdown item text='My Plan' icon={{className:"angle-down s7-angle-down"}}>
-            <Dropdown.Menu className="navbar-drop">
-              <Dropdown.Item>  <span className="icon s7-close-circle"></span>Parked</Dropdown.Item>
-              <Dropdown.Item>  <span className="icon s7-drawer"></span>Pending</Dropdown.Item>
-              <Dropdown.Item> <span className="icon s7-light"></span> In Progress</Dropdown.Item>
-              <Dropdown.Item> <span className="icon s7-car"></span>Running</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
-          <Dropdown item text='My Apps' icon={{className:"angle-down s7-angle-down"}}>
-            <Dropdown.Menu className="navbar-drop">
-              <Dropdown.Item>  <span className="icon s7-close-circle"></span>Parked</Dropdown.Item>
-              <Dropdown.Item>  <span className="icon s7-drawer"></span>Pending</Dropdown.Item>
-              <Dropdown.Item> <span className="icon s7-light"></span> In Progress</Dropdown.Item>
-              <Dropdown.Item> <span className="icon s7-car"></span>Running</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
-          <Menu.Item name="Help" />
-          <Menu.Item name="Service Health" />
+      <Menu.Menu position="left">
+        <Menu.Item name="Home" />
+        <Dropdown item text='My Plan' icon={{className:"angle-down s7-angle-down"}}>
+              <Dropdown.Menu className="navbar-drop">
+                <Dropdown.Item>  <span className="icon s7-close-circle"></span>Parked</Dropdown.Item>
+                <Dropdown.Item>  <span className="icon s7-drawer"></span>Pending</Dropdown.Item>
+                <Dropdown.Item> <span className="icon s7-light"></span> In Progress</Dropdown.Item>
+                <Dropdown.Item> <span className="icon s7-car"></span>Running</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+            <Dropdown item text='My Apps' icon={{className:"angle-down s7-angle-down"}}>
+              <Dropdown.Menu className="navbar-drop">
+                <Dropdown.Item>  <span className="icon s7-close-circle"></span>Parked</Dropdown.Item>
+                <Dropdown.Item>  <span className="icon s7-drawer"></span>Pending</Dropdown.Item>
+                <Dropdown.Item> <span className="icon s7-light"></span> In Progress</Dropdown.Item>
+                <Dropdown.Item> <span className="icon s7-car"></span>Running</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+            <Menu.Item name="Help" />
+            <Menu.Item name="Service Health" />
+      </Menu.Menu>
+      
 
       <Menu.Menu position="right">
       <Dropdown item icon={{className:"icon s7-comment"}}>

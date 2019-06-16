@@ -17,7 +17,7 @@ const SidebarLeft = memo((props) => {
           Dashboard
         </Menu.Item>
        
-        <Menu.Item name='organisation' data-name="organisation"  active={activeItem === 'organisation'} onClick={handleItemClick} onMouseEnter={setHover}>
+        <Menu.Item name='organization' data-name="organization"  active={activeItem === 'organisation'} onClick={handleItemClick} onMouseEnter={setHover}>
           <Icon className="icon s7-diamond" /><br/><br/>
           Organisation
         </Menu.Item>
