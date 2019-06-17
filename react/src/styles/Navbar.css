@@ -1,6 +1,12 @@
 /*------------------------------------------------------------------
 [Navbar styling]
 */
+/* .navigation{
+  position: fixed;
+  top: 0;
+  z-index: 1;
+} */
+
 .navigation .ui.menu{
   height:80px;
   box-shadow: none;
@@ -12,7 +18,8 @@
 @media (min-width:576px){
   .ui.menu .header.item.brand-name{
       width:100px;
-      background-color:#3d3c3c;
+      background-color: rgb(61,60,60);
+      border-bottom: .1px solid rgb(71,70,70);
   }
 }
 
@@ -27,13 +34,9 @@
   min-width: 100%;
 }
 
-/* Margin after first menu item */
+/* Margin before left menu */
 .ui.menu .left{
   margin-left: 20px;
-}
-
-/* Icon size bigger */
-.ui.menu .icon{
 }
 
 /* change font weight */

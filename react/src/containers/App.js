@@ -58,13 +58,16 @@ const App = memo((props)=>  {
     <Provider value={
       {visible,messages, notifications, activeItem,isHovering,navbarVisible,showSidebar,handleItemClick,hideSidebar, handlePusher,handleToggle,handleMouseHover,setHover, removeHover}
       }>
-      <SidebarRight>
-        <NavBar />
-        <div className="app">
+        <SidebarRight>
+          <div className="navbar">
+            <NavBar/>
+          </div>
+          <div className="app">
             <SidebarLeft/>
             <Main/>
-        </div>
-      </SidebarRight>
+          </div>
+        </SidebarRight>
+
     </Provider>
     
    

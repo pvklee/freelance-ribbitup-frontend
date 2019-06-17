@@ -5,17 +5,16 @@
 }
 .sidebar-left{
     width: 100px;
-    background-color:#3d3c3c;
+    background-color:rgb(61,60,60);
     height:100%;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     transition: width 0.3s;
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
-    line-height: 1.42857143;
+    /* line-height: 1.42857143; */
 }
 .sidebar-left .ui.vertical.menu{
     width:100px;
-  
 }
     
 .sidebar-left .ui.secondary.vertical.pointing.menu{
@@ -23,17 +22,24 @@
 }
 .sidebar-left .ui.secondary.vertical.pointing.menu .item{
     border-right:none;
-    padding: 12px;
-    color: #e1e1e1;
+    padding: 21px 0;
+    color: #fff;
     text-align: center;
     font-size: 12px;
-    font-weight: 300;
+    font-weight: 600;
     margin: 0 ;
+    line-height: .9;
+    border-left: 2px solid rgb(61,60,60);
+    border-right: 2px solid rgb(61,60,60);
 }
 
 .sidebar-left .ui.secondary.vertical.pointing.menu .item:hover{
     color:#fff;
-    border-left:2px solid #0177d7;
+    background-color: rgb(66,65,65);
+    border-left-color:#00853E;
+    border-right-color: rgb(66,65,65);
+    border-top: .1px solid rgb(71,70,70);
+    border-bottom: .1px solid rgb(71,70,70);
 }
 
 .sidebar-left .ui.dropdown>.text{
@@ -43,8 +49,7 @@
     display:none;
 }
 .sidebar-left i.icon:before{
-    font-size: 35px;
-    padding: 20px;
+    font-size: 33px;
     display: block;
 }
 .sidebar-left .ui.vertical.menu .dropdown.item .menu{

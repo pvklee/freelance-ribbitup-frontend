@@ -60,7 +60,7 @@ import { Image, Menu, Sidebar, Responsive, Segment, Dropdown, Sticky, Ref, Label
     <div className="navigation">
     <Menu fixed="top">
     <Menu.Item header className="brand-name">
-      <Image size="mini" src={logo} centered/>
+      <Image src={logo} centered/>
     </Menu.Item>
       <Menu.Menu position="left">
         <Menu.Item name="Home" />

@@ -8,6 +8,9 @@ import ContactList from "./ContactList";
 import SidebarForm from "./SidebarForm"
 import Context from '../../containers/Context';
 import Bugs from "./Bugs";
+
+import NavBar from '../Navbar/Navbar';
+
 import "../../styles/SidebarRight.css";
 
 const SidebarRight = memo((props) => {
@@ -34,20 +37,18 @@ const SidebarRight = memo((props) => {
             vertical
             visible={visible}
           >
-          <Card className="user-info"
-            image={faker.internet.avatar()}
-            header='Elliot Baker'
-            meta={meta}
-            description='Director'
-          />
-          <Tab menu={{ text: true }} panes={panes} />
-
-
+            <Card className="user-info"
+                  image={faker.internet.avatar()}
+                  header='Elliot Baker'
+                  meta={meta}
+                  description='Director'
+                />
+              <Tab menu={{ text: true }} panes={panes} />
           </Sidebar>
-
           <Sidebar.Pusher>
-            {props.children}
+              {props.children}
           </Sidebar.Pusher>
+
         </Sidebar.Pushable>
         </div>
     )
