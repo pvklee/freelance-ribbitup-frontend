@@ -8,6 +8,9 @@ import ContactList from "./ContactList";
 import SidebarForm from "./SidebarForm"
 import Context from '../../containers/Context';
 import Bugs from "./Bugs";
+
+import NavBar from '../Navbar/Navbar';
+
 import "../../styles/SidebarRight.css";
 import labels from "../../labels_en.json";
 
@@ -44,13 +47,11 @@ const SidebarRight = memo((props) => {
           />
           <Tab menu={{ text: true }} panes={panes} />
           <Input size='large' className="search" icon={{className:"s7-search"}} placeholder='Search...' />
-
-
           </Sidebar>
-
           <Sidebar.Pusher>
-            {props.children}
+              {props.children}
           </Sidebar.Pusher>
+
         </Sidebar.Pushable>
         </div>
     )

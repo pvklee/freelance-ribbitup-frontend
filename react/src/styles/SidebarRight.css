@@ -1,3 +1,13 @@
+.pushable:not(body) {
+    transform: none;
+}
+  
+.pushable:not(body) .ui.sidebar,
+.pushable:not(body) .fixed,
+.pushable:not(body) .pusher:after {
+    position: fixed;
+}
+
 .sidebar-right .ui.inverted.menu{
     background: #484747;
     font-family: "Raleway";
@@ -13,6 +23,7 @@
     padding: 30px 20px;
     border-bottom:none;
     background-color: #424141;
+    
 }
 
 .sidebar-right .ui.card>.image, .ui.cards>.card>.image{
@@ -71,8 +82,9 @@
     font-size: 20px;
 }
 .sidebar-right .ui.menu .active.item>i.icon{
-    color:#0177d7;
+    /* color:#0177d7; */
 }
+
 .sidebar-right .ui.header{
     color: #e1e1e1;
     font-size: 15px;

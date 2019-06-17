@@ -64,29 +64,30 @@ function equalityCheck(prevProps, nextProps) {
     <div className="navigation">
     <Menu fixed="top">
     <Menu.Item header className="brand-name">
-      <Image size="mini" src={logo} centered/>
+      <Image src={logo} centered/>
     </Menu.Item>
+      <Menu.Menu position="left">
       <Menu.Item name={labelValues[0].menu} />
       <Dropdown item text={labelValues[1].menu} icon={{className:"angle-down s7-angle-down"}}>
-            <Dropdown.Menu className="navbar-drop">
-              <Dropdown.Item>  <span className="icon s7-close-circle"></span>Parked</Dropdown.Item>
-              <Dropdown.Item>  <span className="icon s7-drawer"></span>Pending</Dropdown.Item>
-              <Dropdown.Item> <span className="icon s7-light"></span> In Progress</Dropdown.Item>
-              <Dropdown.Item> <span className="icon s7-car"></span>Running</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
-          <Dropdown item text={labelValues[2].menu} icon={{className:"angle-down s7-angle-down"}}>
-            <Dropdown.Menu className="navbar-drop">
-              <Dropdown.Item>  <span className="icon s7-close-circle"></span>Parked</Dropdown.Item>
-              <Dropdown.Item>  <span className="icon s7-drawer"></span>Pending</Dropdown.Item>
-              <Dropdown.Item> <span className="icon s7-light"></span> In Progress</Dropdown.Item>
-              <Dropdown.Item> <span className="icon s7-car"></span>Running</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
-          <Menu.Item name={labelValues[3].menu}/>
-          <Menu.Item name={labelValues[4].menu} />
-
-      <Menu.Menu position="right">
+        <Dropdown.Menu className="navbar-drop">
+          <Dropdown.Item>  <span className="icon s7-close-circle"></span>Parked</Dropdown.Item>
+          <Dropdown.Item>  <span className="icon s7-drawer"></span>Pending</Dropdown.Item>
+          <Dropdown.Item> <span className="icon s7-light"></span> In Progress</Dropdown.Item>
+          <Dropdown.Item> <span className="icon s7-car"></span>Running</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
+      <Dropdown item text={labelValues[2].menu} icon={{className:"angle-down s7-angle-down"}}>
+        <Dropdown.Menu className="navbar-drop">
+          <Dropdown.Item>  <span className="icon s7-close-circle"></span>Parked</Dropdown.Item>
+          <Dropdown.Item>  <span className="icon s7-drawer"></span>Pending</Dropdown.Item>
+          <Dropdown.Item> <span className="icon s7-light"></span> In Progress</Dropdown.Item>
+          <Dropdown.Item> <span className="icon s7-car"></span>Running</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
+      <Menu.Item name={labelValues[3].menu}/>
+      <Menu.Item name={labelValues[4].menu} />
+    </Menu.Menu>
+    <Menu.Menu position="right">
       <Dropdown item icon={{className:"icon s7-comment"}}>
             <Dropdown.Menu className="messages-drop navbar-drop">
             <Dropdown.Item > Messages {"  "}<Label color='red'>{messages.length == 0 ? "0" :messages.length}</Label></Dropdown.Item>
