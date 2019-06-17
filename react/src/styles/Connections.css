@@ -1,0 +1,5 @@
+.connections{
+    max-height: 200px;
+    overflow-y: scroll;
+    width:270px;
+  }

@@ -7,12 +7,15 @@
     width: 100px;
     background-color:#3d3c3c;
     height:100%;
-    overflow-y: scroll;
+    overflow: hidden;
     transition: width 0.3s;
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
     line-height: 1.42857143;
+    
 }
+
+
 .sidebar-left .ui.vertical.menu{
     width:100px;
   
@@ -20,6 +23,7 @@
     
 .sidebar-left .ui.secondary.vertical.pointing.menu{
     border:none;
+    margin-top:0;
 }
 .sidebar-left .ui.secondary.vertical.pointing.menu .item{
     border-right:none;
@@ -29,11 +33,13 @@
     font-size: 12px;
     font-weight: 300;
     margin: 0 ;
+    border-bottom: 1px solid #524f4f;
 }
 
-.sidebar-left .ui.secondary.vertical.pointing.menu .item:hover{
+.sidebar-left .ui.secondary.vertical.pointing.menu:hover{
     color:#fff;
     border-left:2px solid #0177d7;
+    background: #484747;
 }
 
 .sidebar-left .ui.dropdown>.text{

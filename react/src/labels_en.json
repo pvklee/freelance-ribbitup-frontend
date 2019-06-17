@@ -1,0 +1,127 @@
+{
+    "navbarMenu":[
+      {"id":"100","menu":"Home"},
+      {"id":"200","menu":"My Plan"},
+      {"id":"300","menu":"My Apps"},
+      {"id":"400","menu":"Help"},
+      {"id":"500","menu":"Service Health"}
+    ],
+
+    "rightSidebar":[
+      {"id":"700","menu":"Announcement"},
+      {"id":"800", "menu":"Recent"},
+      {"id":"900","menu":"Bugs","button":"Log Bug"},
+      {"id":"1000","menu":"New Enhancement", "button":"Log Request"}, 
+      {"id":"1100","menu":"New Support Ticket", "button":"Create Ticket"}],
+
+    "leftSideBar":[
+      {"id":"1200","menu":"Dashboard", "icon":"icon s7-monitor"}, 
+      {"id":"1300","menu":"Organisation","icon":"icon s7-diamond"}, 
+      {"id":"1400","menu":"Output","icon":"icon s7-graph"}, 
+      {"id":"1500","menu":"Services","icon":"icon s7-box2"},
+      {"id":"1600","menu":"Messages", "icon":"icon s7-mail"},
+      {"id":"1700","menu":"Audit", "icon":"icon s7-note2"},
+      {"id":"1800","menu":"Map","icon":"icon s7-map-marker"}
+    ],
+    
+    "leftSidebarHover":[
+    {
+    "id":"1200",
+     "menu":"Dashboard",
+      "submenu":[
+        {
+          "id":"1200-1",
+          "heading":[],
+          "links":["Apples", "Pears", "Orange"]
+        }
+        
+    ]
+    },
+
+    {
+     "id":"1300",
+     "menu":"Organisation",
+      "submenu":[
+          {
+            "id":"1300-1",
+            "heading":["BUSINESS"],
+            "links":["Business Units"]
+          },
+          {
+            "id":"1300-2",
+            "heading":["ACCESS MANAGEMENT"],
+            "links":["Users","Roles", "Credential Vault"]
+          },
+          {
+            "id":"1300-3",
+            "heading":["GENERAL"],
+            "links":["Email Configuration"]
+          }
+      ]
+    },
+
+    {
+      "id":"1400",
+     "menu":"Output",
+      "submenu":[
+        {
+          "id":"1400-1",
+          "heading":[],
+          "links":["Opportunities", "Considered", "Plan", "Sketch","Monitor"]
+        }
+        
+    ]
+    },
+
+    {
+     "id":"1500",
+     "menu":"Services",
+      "submenu":[
+        {
+          "id":"1500-1",
+          "heading":[],
+          "links":["Cortex", "Rails"]
+        }
+        
+    ]
+    },
+
+    {
+      "id":"1600",
+      "menu":"Messages",
+      "submenu":[
+        {
+          "id":"1600-1",
+          "heading":[],
+          "links":["Inbox", "Email Details", "Email Compose"]
+        }
+        
+      ]
+    },
+
+    {
+      "id":"1700",
+      "menu":"Audit",
+      "submenu":[
+        {
+          "id":"1700-1",
+          "heading":[],
+          "links":["Apps", "Platform"]
+        }
+        
+    ] 
+    },
+
+    {
+      "id":"1800",
+      "menu":"Map",
+      "submenu":[
+        {
+          "id":"1800-1",
+          "heading":"",
+          "links":["Google Maps", "Vector Maps"]
+        } 
+     ]
+    }
+    ]
+  }

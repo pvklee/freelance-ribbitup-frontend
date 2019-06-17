@@ -80,8 +80,38 @@
   color: #504e4e !important;
   padding: 10px 20px !important;
   min-width: 175px;
+  
+}
+.ui.menu .ui.dropdown .menu.navbar-drop.messages-drop >.item {
+  text-align: center;
+}
+
+.ui.menu .ui.dropdown .menu.navbar-drop.messages-drop >.item {
+  text-align: center;
 }
 
 .ui.menu .item>.label{
   border-radius: 50%;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 9px;
+  vertical-align: middle;
+  margin-left: 4px;
+  background-color: #e4e4e4;
+  color: #8a8a8a;
+  min-width: 17px;
+  height: 17px;
+  text-align: center;
+  padding: 3px;
+}
+.navigation .ui.mini.image{
+  width: 25px
+}
+
+.navigation .ui.menu .ui.list .list>.item,.navigation .ui.menu .ui.list>.item:first-child{
+  background: rgba(1,119,215,0.4);
+}
+
+.navigation .ui.menu .ui.list .list>.item, .navigation .ui.menu .ui.list>.item:hover{
+  background: rgba(1,119,215,0.4);
 }

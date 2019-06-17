@@ -165,11 +165,17 @@
 
 body {
   margin: 0;
-  font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Raleway","Open sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -ms-scrollbar-face-color:#3d3c3c;
+  -ms-scrollbar-arrow-color:#3d3c3c;
+  -ms-scrollbar-track-color:#3d3c3c;
+  -ms-scrollbar-shadow-color:#3d3c3c;
+  -ms-scrollbar-highlight-color:#3d3c3c;
+  -ms-scrollbar-3dlight-color:#3d3c3c;
+  -ms-scrollbar-darkshadow-Color:#3d3c3c;
+  
 }
 
 code {

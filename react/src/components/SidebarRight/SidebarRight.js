@@ -1,6 +1,6 @@
 import React,{useContext,memo} from 'react';
 import faker from 'faker';
-import {isEqual} from "lodash";
+import _, {isEqual} from "lodash";
 import {Menu, Segment, Sidebar, Card, Tab, Header, Input } from 'semantic-ui-react';
 import AnnouncementList from "./AnnouncementList"
 import RecentList from "./RecentList";
@@ -9,19 +9,21 @@ import SidebarForm from "./SidebarForm"
 import Context from '../../containers/Context';
 import Bugs from "./Bugs";
 import "../../styles/SidebarRight.css";
+import labels from "../../labels_en.json";
 
 const SidebarRight = memo((props) => {
   const {visible} = useContext(Context);
+  const labelValues = _.values(labels.rightSidebar);
 
   const meta =(
     <span className="status"></span>
   )
   const panes = [
-    { "menuItem": { key: 'users', icon:{className:"angle-down s7-smile"}}, render: () => <Tab.Pane attached={false}> <Header as='h3'>Announcement</Header><AnnouncementList/></Tab.Pane> },
-    { "menuItem": { key: 'messages', icon:{className:"angle-down s7-chat"}}, render: () => <Tab.Pane attached={false}> <Header as='h3'>Recent</Header><RecentList/> <Header as='h3'>Contacts</Header> <ContactList/></Tab.Pane> },
-    { "menuItem": { key: 'view', icon:{className:"angle-down s7-look"}}, render: () => <Tab.Pane attached={false}> <Header as='h3'>Bugs</Header><Bugs/> <Input size='large' className="search" icon={{className:"s7-search"}} placeholder='Search...' /></Tab.Pane> },
-    { "menuItem": { key: 'edit', icon:{className:"angle-down s7-pen"}}, render: () => <Tab.Pane attached={false}> <Header as='h3'>New Enhancement</Header><SidebarForm/> <Input size='large' className="search" icon={{className:"s7-search"}} placeholder='Search...' /></Tab.Pane> },
-    { "menuItem": { key: 'support', icon:{className:"angle-down s7-ticket"}}, render: () => <Tab.Pane attached={false}> <Header as='h3'>New Support Ticket</Header><SidebarForm/> <Input size='large' className="search" icon={{className:"s7-search"}} placeholder='Search...' /></Tab.Pane> },
+    { "menuItem": { key: 'users', icon:{className:"angle-down s7-smile"}}, render: () => <Tab.Pane  attached={false}> <div className="tab-content"><Header as='h3'>{labelValues[0].menu}</Header><AnnouncementList/></div></Tab.Pane> },
+    { "menuItem": { key: 'messages', icon:{className:"angle-down s7-chat"}}, render: () => <Tab.Pane  attached={false}> <div className="tab-content"> <Header as='h3'>{labelValues[1].menu}</Header><RecentList/> <Header as='h3'>Contacts</Header> <ContactList/> </div></Tab.Pane>  },
+    { "menuItem": { key: 'view', icon:{className:"angle-down s7-look"}}, render: () => <Tab.Pane  attached={false}>  <div className="tab-content"><Header as='h3'>{labelValues[2].menu}</Header><Bugs/></div></Tab.Pane> },
+    { "menuItem": { key: 'edit', icon:{className:"angle-down s7-pen"}}, render: () => <Tab.Pane attached={false}> <div className="tab-content"> <Header as='h3'>{labelValues[3].menu}</Header><SidebarForm label={labelValues[3].button}/> </div></Tab.Pane> },
+    { "menuItem": { key: 'support', icon:{className:"angle-down s7-ticket"}}, render: () => <Tab.Pane attached={false}> <div className="tab-content"> <Header as='h3'>{labelValues[4].menu}</Header><SidebarForm label={labelValues[4].button}/> </div></Tab.Pane> },
   ]
     return (
         <div className="sidebar-right"> 
@@ -41,6 +43,7 @@ const SidebarRight = memo((props) => {
             description='Director'
           />
           <Tab menu={{ text: true }} panes={panes} />
+          <Input size='large' className="search" icon={{className:"s7-search"}} placeholder='Search...' />
 
 
           </Sidebar>

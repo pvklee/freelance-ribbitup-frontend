@@ -11,7 +11,7 @@ const Notifications = () => {
   <List divided relaxed>
     {notifications.length > 0 && _.map(notifications, (keys, value)=>
     <List.Item key={keys.id}>
-      <List.Icon className={"icon s7-pin"} />
+        <List.Icon className={"icon s7-pin shade"} />
       <List.Content>
         <List.Header as='a'>{keys.from}</List.Header>
         <List.Description as='a'>{keys.message}</List.Description>

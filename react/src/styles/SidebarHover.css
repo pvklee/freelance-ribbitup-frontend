@@ -15,7 +15,7 @@
 .sidebar-hover .title{
     color: #ffffff;
     border-bottom: 1px solid #6d6b6b;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 300;
     margin: 0 25px 0;
     padding-bottom: 18px;
@@ -23,7 +23,7 @@
 }
 
 .sidebar-hover .hover-title{
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
     color: #0177d7;
     padding: 10px 25px;
@@ -36,7 +36,3 @@
     display: block;
     font-weight: 300;
 }
-
-/* .sidebar-hover .ui.list>.item:hover{
-   background: #424141
-} */

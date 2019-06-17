@@ -3,6 +3,12 @@
     display: flex;
     overflow: hidden;
 }
+.recent .ui.menu .ui.list .list>.item, .recent .ui.menu .ui.list>.item:hover{
+    color:#999999;
+}
 .recent .ui.list .list>.item .description, .ui.list>.item .description{
     color: #999999;
+}
+.recent .ui.list .list>.item a.header, .recent .ui.list>.item a.header:hover{
+    color:#fff !important;
 }

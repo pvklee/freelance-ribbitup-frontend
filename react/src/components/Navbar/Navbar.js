@@ -1,13 +1,17 @@
 import React, {useContext, createRef, memo, Suspense} from 'react';
 import faker from 'faker';
-import {isEqual} from "lodash"
+import _,{isEqual} from "lodash"
 import "../../styles/Navbar.css"
 import logo from '../../styles/images/logo.png';
 import Context from '../../containers/Context';
 import ErrorBoundary from "../ErrorBoundary/ErrorBoundary";
 import Loading from "../Loading/Loading"
 import { Image, Menu, Sidebar, Responsive, Segment, Dropdown, Sticky, Ref, Label} from "semantic-ui-react";
-  
+import labels from "../../labels_en.json";
+const labelValues = _.values(labels.navbarMenu);
+function equalityCheck(prevProps, nextProps) {
+  return isEqual(prevProps, nextProps)
+  } 
 
   const NavBarMobile = (prop) => {
     const {visible,handlePusher,handleToggle,hideSidebar, showSidebar} = useContext(Context);
@@ -62,8 +66,8 @@ import { Image, Menu, Sidebar, Responsive, Segment, Dropdown, Sticky, Ref, Label
     <Menu.Item header className="brand-name">
       <Image size="mini" src={logo} centered/>
     </Menu.Item>
-      <Menu.Item name="Home" />
-      <Dropdown item text='My Plan' icon={{className:"angle-down s7-angle-down"}}>
+      <Menu.Item name={labelValues[0].menu} />
+      <Dropdown item text={labelValues[1].menu} icon={{className:"angle-down s7-angle-down"}}>
             <Dropdown.Menu className="navbar-drop">
               <Dropdown.Item>  <span className="icon s7-close-circle"></span>Parked</Dropdown.Item>
               <Dropdown.Item>  <span className="icon s7-drawer"></span>Pending</Dropdown.Item>
@@ -71,7 +75,7 @@ import { Image, Menu, Sidebar, Responsive, Segment, Dropdown, Sticky, Ref, Label
               <Dropdown.Item> <span className="icon s7-car"></span>Running</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
-          <Dropdown item text='My Apps' icon={{className:"angle-down s7-angle-down"}}>
+          <Dropdown item text={labelValues[2].menu} icon={{className:"angle-down s7-angle-down"}}>
             <Dropdown.Menu className="navbar-drop">
               <Dropdown.Item>  <span className="icon s7-close-circle"></span>Parked</Dropdown.Item>
               <Dropdown.Item>  <span className="icon s7-drawer"></span>Pending</Dropdown.Item>
@@ -79,13 +83,13 @@ import { Image, Menu, Sidebar, Responsive, Segment, Dropdown, Sticky, Ref, Label
               <Dropdown.Item> <span className="icon s7-car"></span>Running</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
-          <Menu.Item name="Help" />
-          <Menu.Item name="Service Health" />
+          <Menu.Item name={labelValues[3].menu}/>
+          <Menu.Item name={labelValues[4].menu} />
 
       <Menu.Menu position="right">
       <Dropdown item icon={{className:"icon s7-comment"}}>
             <Dropdown.Menu className="messages-drop navbar-drop">
-            <Dropdown.Item> Messages {"  "}<Label color='red'>{messages.length === 0?"0":messages.length}</Label></Dropdown.Item>
+            <Dropdown.Item > Messages {"  "}<Label color='red'>{messages.length == 0 ? "0" :messages.length}</Label></Dropdown.Item>
             
               <ErrorBoundary>
                 <Suspense fallback={<Loading/>}>
@@ -98,7 +102,7 @@ import { Image, Menu, Sidebar, Responsive, Segment, Dropdown, Sticky, Ref, Label
           </Dropdown>
           <Dropdown item icon={{className:"icon s7-bell"}}>
             <Dropdown.Menu className="navbar-drop messages-drop">
-            <Dropdown.Item>Notifications{" "}<Label color='red'>{notifications.length === 0?"0":notifications.length}</Label></Dropdown.Item>
+            <Dropdown.Item >Notifications{" "}<Label color='red'>{notifications.length === 0 ? "0":notifications.length}</Label></Dropdown.Item>
             <ErrorBoundary>
                 <Suspense fallback={<Loading/>}>
                     <Notifications/>
@@ -108,8 +112,8 @@ import { Image, Menu, Sidebar, Responsive, Segment, Dropdown, Sticky, Ref, Label
             </Dropdown.Menu>
           </Dropdown>
           <Dropdown item icon={{className:"icon s7-share"}}>
-            <Dropdown.Menu className="navbar-drop">
-            <Dropdown.Item>Connections</Dropdown.Item>
+            <Dropdown.Menu className="navbar-drop messages-drop">
+            <Dropdown.Item >Connections</Dropdown.Item>
               <ErrorBoundary>
                   <Suspense fallback={<Loading/>}>
                       <Connections/>
@@ -133,11 +137,6 @@ import { Image, Menu, Sidebar, Responsive, Segment, Dropdown, Sticky, Ref, Label
     </div>
   );
 }, equalityCheck)
-
-function equalityCheck(prevProps, nextProps) {
-  console.log("Navbar.js", isEqual(prevProps, nextProps));
-  return isEqual(prevProps, nextProps)
-  } 
 
   const NavBar = memo((props) => {
     const contextRef = createRef()

@@ -17,6 +17,42 @@ const SidebarRightList = memo((props) => {
         </List.Content>
       </List.Item>
       <List.Item>
+        <List.Icon className={"icon s7-sun"} />
+        <List.Content>
+          <List.Header as='a'>Krowlewskie Jadlo</List.Header>
+          <List.Description>
+            An excellent polish restaurant, quick delivery and hearty, filling meals.
+          </List.Description>
+        </List.Content>
+      </List.Item>
+      <List.Item>
+        <List.Icon className={"icon s7-sun"} />
+        <List.Content>
+          <List.Header as='a'>Krowlewskie Jadlo</List.Header>
+          <List.Description>
+            An excellent polish restaurant, quick delivery and hearty, filling meals.
+          </List.Description>
+        </List.Content>
+      </List.Item>
+      <List.Item>
+        <List.Icon className={"icon s7-sun"} />
+        <List.Content>
+          <List.Header as='a'>Krowlewskie Jadlo</List.Header>
+          <List.Description>
+            An excellent polish restaurant, quick delivery and hearty, filling meals.
+          </List.Description>
+        </List.Content>
+      </List.Item>
+      <List.Item>
+        <List.Icon className={"icon s7-sun"} />
+        <List.Content>
+          <List.Header as='a'>Krowlewskie Jadlo</List.Header>
+          <List.Description>
+            An excellent polish restaurant, quick delivery and hearty, filling meals.
+          </List.Description>
+        </List.Content>
+      </List.Item>
+      <List.Item>
         <List.Icon className={"icon s7-gift"} />
         <List.Content>
           <List.Header as='a'>Xian Famous Foods</List.Header>
@@ -26,6 +62,97 @@ const SidebarRightList = memo((props) => {
           </List.Description>
         </List.Content>
       </List.Item>
+      <List.Item>
+        <List.Icon className={"icon s7-gift"} />
+        <List.Content>
+          <List.Header as='a'>Xian Famous Foods</List.Header>
+          <List.Description>
+            A taste of Shaanxi's delicious culinary traditions, with delights like spicy cold noodles
+            and lamb burgers.
+          </List.Description>
+        </List.Content>
+      </List.Item>
+      <List.Item>
+        <List.Icon className={"icon s7-gift"} />
+        <List.Content>
+          <List.Header as='a'>Xian Famous Foods</List.Header>
+          <List.Description>
+            A taste of Shaanxi's delicious culinary traditions, with delights like spicy cold noodles
+            and lamb burgers.
+          </List.Description>
+        </List.Content>
+      </List.Item>
+      <List.Item>
+        <List.Icon className={"icon s7-gift"} />
+        <List.Content>
+          <List.Header as='a'>Xian Famous Foods</List.Header>
+          <List.Description>
+            A taste of Shaanxi's delicious culinary traditions, with delights like spicy cold noodles
+            and lamb burgers.
+          </List.Description>
+        </List.Content>
+      </List.Item>
+      <List.Item>
+        <List.Icon className={"icon s7-gift"} />
+        <List.Content>
+          <List.Header as='a'>Xian Famous Foods</List.Header>
+          <List.Description>
+            A taste of Shaanxi's delicious culinary traditions, with delights like spicy cold noodles
+            and lamb burgers.
+          </List.Description>
+        </List.Content>
+      </List.Item>
+      <List.Item>
+        <List.Icon className={"icon s7-gift"} />
+        <List.Content>
+          <List.Header as='a'>Xian Famous Foods</List.Header>
+          <List.Description>
+            A taste of Shaanxi's delicious culinary traditions, with delights like spicy cold noodles
+            and lamb burgers.
+          </List.Description>
+        </List.Content>
+      </List.Item>
+      <List.Item>
+        <List.Icon className={"icon s7-gift"} />
+        <List.Content>
+          <List.Header as='a'>Xian Famous Foods</List.Header>
+          <List.Description>
+            A taste of Shaanxi's delicious culinary traditions, with delights like spicy cold noodles
+            and lamb burgers.
+          </List.Description>
+        </List.Content>
+      </List.Item>
+      <List.Item>
+        <List.Icon className={"icon s7-gift"} />
+        <List.Content>
+          <List.Header as='a'>Xian Famous Foods</List.Header>
+          <List.Description>
+            A taste of Shaanxi's delicious culinary traditions, with delights like spicy cold noodles
+            and lamb burgers.
+          </List.Description>
+        </List.Content>
+      </List.Item>
+      <List.Item>
+        <List.Icon className={"icon s7-gift"} />
+        <List.Content>
+          <List.Header as='a'>Xian Famous Foods</List.Header>
+          <List.Description>
+            A taste of Shaanxi's delicious culinary traditions, with delights like spicy cold noodles
+            and lamb burgers.
+          </List.Description>
+        </List.Content>
+      </List.Item>
+      <List.Item>
+        <List.Icon className={"icon s7-gift"} />
+        <List.Content>
+          <List.Header as='a'>Xian Famous Foods</List.Header>
+          <List.Description>
+            A taste of Shaanxi's delicious culinary traditions, with delights like spicy cold noodles
+            and lamb burgers.
+          </List.Description>
+        </List.Content>
+      </List.Item>
+     
     </List>
     </div>
     )

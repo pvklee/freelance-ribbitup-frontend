@@ -1,15 +1,14 @@
 import React, { useContext,memo} from "react";
 import Context from "../../containers/Context";
 import _ , {isEqual} from "lodash";
-import random from "random";
 import {List} from "semantic-ui-react";
 import "../../styles/SidebarHover.css";
-import labels from "../../sidebar-labels.json"
+import labels from "../../labels_en.json";
 
 
 const SidebarHover = memo((props) => {
   const {isHovering, setHover, removeHover} = useContext(Context);
-  const labelValues = _.values(labels);
+  const labelValues = _.values(labels.leftSidebarHover);
   const filterdMenu = _.filter( labelValues, (value) => { return value.menu.toLowerCase() === isHovering.target});
   const items = _.map(filterdMenu[0].submenu, (value) => value);
   // console.log("items",items);
@@ -21,7 +20,7 @@ const SidebarHover = memo((props) => {
         <List>
         {_.map(items, (value) => 
           {
-            return _.map(value, (keys,index) => index === "heading" ? <div key={random.int(0, 100)}><div className="hover-title">{keys}</div></div> : index === "links" ? <div className="hover-items" key={random.int(0, 100)}> {_.map(keys,(indx)=><List.Item className="hover-links" key={random.int(0, 100)}>{indx}</List.Item>)}</div>:""
+            return _.map(value, (keys,index) => index === "heading" ? <div key={`x-${keys.id}`}><div className="hover-title">{keys}</div></div> : index === "links" ? <div className="hover-items" key={`x-${value}`}> {_.map(keys,(indx,value)=><List.Item className="hover-links" key={`y-${value}`}>{indx}</List.Item>)}</div>:""
               )
             } 
         )}

@@ -2,7 +2,7 @@ import React from 'react'
 import { Button, Form } from 'semantic-ui-react';
 import "../../styles/SidebarForm.css"
 
-const SidebarForm = () => (
+const SidebarForm = (props) => (
   <div className="sidebar-form">
   <Form>
     <Form.Field>
@@ -11,7 +11,7 @@ const SidebarForm = () => (
     <Form.Field>
     <Form.TextArea placeholder='Write here...' />
     </Form.Field>
-    <Button type='submit'>Submit</Button>
+    <Button type='submit'>{props.label}</Button>
   </Form>
   </div>
 )

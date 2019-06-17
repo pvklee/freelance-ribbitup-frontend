@@ -1,11 +1,14 @@
 import React,{useState} from "react";
 import { Accordion, Icon } from 'semantic-ui-react';
 import SidebarForm from "./SidebarForm";
+import _ from "lodash";
 import "../../styles/Bugs.css";
+import labels from "../../labels_en.json";
 
 
 const Bugs = ()=>{
-    const [activeIndex, setActiveIndex] = useState(0)
+    const [activeIndex, setActiveIndex] = useState(0);
+    const labelValues = _.values(labels.rightSidebar);
 
     const handleClick = (e, titleProps) => {
         console.log(titleProps);
@@ -15,7 +18,7 @@ const Bugs = ()=>{
     }
     return(
         <div className="bugs">
-        <SidebarForm/> 
+        <SidebarForm label={labelValues[2].button}/> 
 
         <Accordion>
             <Accordion.Title active={activeIndex === 0} index={0} onClick={handleClick}>
@@ -27,6 +30,7 @@ const Bugs = ()=>{
             Suspendisse nec leo tortor rhoncus tincidunt. Duis sit amet rutrum elit.
             </p>
             </Accordion.Content>
+            
 
             <Accordion.Title active={activeIndex === 1} index={1} onClick={handleClick}>
             <Icon className="s7-angle-down" />

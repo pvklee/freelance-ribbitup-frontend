@@ -7,12 +7,11 @@ import Main from "../components/Main/Main";
 import NavBar from '../components/Navbar/Navbar';
 import Context from './Context';
 import {services} from "../services.json";
+import {url} from "../config.json";
+
 const App = memo((props)=>  {
- 
   const { Provider } = Context;
   const [messages, setMessages] = useState([])
-  const url = "https://my.api.mockaroo.com";
-  console.log(url+services[2].url);
 
   useEffect(() => {fetch(url+services[2].url, 
       {
@@ -22,8 +21,9 @@ const App = memo((props)=>  {
       }
   })
   .then(resp=>resp.json())
-  .then(data=>setMessages(data))
+  .then(data=> data.error?setMessages([]):setMessages(data))
   },[]);
+  console.log(messages, messages.length);
 
   const [notifications, setNotification] = useState([])
   
@@ -36,7 +36,7 @@ const App = memo((props)=>  {
       }
   })
   .then(resp=>resp.json())
-  .then(data=>setNotification(data))
+  .then(data=>data.error? setNotification([]) : setNotification(data))
   },[])
 
   const [visible, setVisible] = useState(false);

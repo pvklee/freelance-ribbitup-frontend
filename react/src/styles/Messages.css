@@ -2,14 +2,6 @@
   max-height: 200px;
   overflow-y: scroll;
 }
-.ui.menu .ui.dropdown.item .menu .item:not(.filtered) {
+.messages .ui.menu .ui.dropdown.item .menu .item:not(.filtered) {
   padding: 20px;
-}
-
-.messages .ui.list .list>.item a.header, .ui.list>.item a.header{
-    color: #0177d7 !important;
-}
-
-.messages .ui.menu .ui.list .list>.item, .ui.menu .ui.list>.item:hover{
-  background: rgba(1,119,215,0.4);
 }
