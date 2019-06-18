@@ -106,12 +106,22 @@
   padding: 0 25px 26px 0px;
 }
 
-.navigation i.icon.profile-icon{
+.navigation i.icon.reduced-padding-right{
   padding-right: 0px;
 }
 
-.navigation i.icon.sidebar-toggle-icon{
-  padding-right: 0px;
+.navigation .message-dropdown-button {
+  width: 44px;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation .profile-button {
+  margin-left: 20px;
+}
+
+.navigation .trigger-image{
+  font-size: 22px;
 }
 
 .ui.menu .ui.dropdown .menu.navbar-drop >.item {
