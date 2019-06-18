@@ -32,19 +32,13 @@
     margin: 0 ;
     border-bottom: 1px solid #524f4f;
     line-height: .9;
-    border-left: 2px solid rgb(61,60,60);
-    border-right: 2px solid rgb(61,60,60);
 }
 
 .sidebar-left .ui.secondary.vertical.pointing.menu:hover{
     color:#fff;
-    /* border-left:2px solid #0177d7;
-    background: #484747; */
     background-color: rgb(66,65,65);
-    border-left-color:#00853E;
-    border-right-color: rgb(66,65,65);
-    border-top: .1px solid rgb(71,70,70);
-    border-bottom: .1px solid rgb(71,70,70);
+    padding-right: 2px;
+    border-left: 2px solid #00853E;
 }
 
 .sidebar-left .ui.dropdown>.text{

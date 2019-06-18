@@ -65,10 +65,9 @@
 .ui.menu .dropdown.item .menu.navbar-drop {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
   border: 0;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-  margin-top: 0px;
-  padding-top: 6px;
+  border-radius: 3px;
+  margin-top: 2px;
+  padding: 6px 0;
 }
 
 .ui.menu .dropdown.item .menu.navbar-drop:after{
@@ -95,7 +94,7 @@
 
 
 .ui.menu .ui.dropdown .menu.navbar-drop >.item {
-  font-size: 12px !important;
+  font-size: 13px !important;
   font-weight: 300 !important;
   color: #504e4e !important;
   padding: 10px 20px !important;
@@ -103,10 +102,7 @@
 }
 .ui.menu .ui.dropdown .menu.navbar-drop.messages-drop >.item {
   text-align: center;
-}
-
-.ui.menu .ui.dropdown .menu.navbar-drop.messages-drop >.item {
-  text-align: center;
+  width: 300px;
 }
 
 .ui.menu .item>.label{
