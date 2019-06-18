@@ -123,15 +123,15 @@ function equalityCheck(prevProps, nextProps) {
               <Dropdown.Item>View all Connections</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
-          <Dropdown item trigger={trigger} icon={{className:"angle-down s7-angle-down"}}>
-          <Dropdown.Menu className="navbar-drop">
+          <Dropdown item trigger={trigger} icon={{className:"angle-down s7-angle-down profile-icon"}}>
+          <Dropdown.Menu className="navbar-drop profile-drop">
               <Dropdown.Item>  <span className="icon s7-user"></span>Profile</Dropdown.Item>
               <Dropdown.Item>  <span className="icon s7-config"></span>Settings</Dropdown.Item>
               <Dropdown.Item> <span className="icon s7-help1"></span> Help</Dropdown.Item>
               <Dropdown.Item> <span className="icon s7-power"></span>Logout</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
-       {visible ? <Menu.Item icon={{className:"icon s7-close"}} onClick={hideSidebar}></Menu.Item> : <Menu.Item icon={{className:"icon s7-menu2"}} onClick={showSidebar}></Menu.Item>}
+       {visible ? <Menu.Item icon={{className:"icon sidebar-toggle-icon s7-close"}} onClick={hideSidebar}></Menu.Item> : <Menu.Item icon={{className:"icon sidebar-toggle-icon s7-menu2"}} onClick={showSidebar}></Menu.Item>}
       </Menu.Menu>
      
     </Menu>

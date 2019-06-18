@@ -26,7 +26,6 @@
 .ui.menu {
   font-family: 'Raleway', sans-serif;
   margin-bottom: 0;
-  /* background: #ef6262; */
   background: #00853E;
   border-radius: 0;
 }
@@ -34,12 +33,18 @@
   min-width: 100%;
 }
 
-/* Margin before left menu */
+.ui.menu .item{
+  /* padding-right: 30px; */
+}
+
 .ui.menu .left{
   margin-left: 20px;
 }
 
-/* change font weight */
+.ui.menu .right{
+  margin-right: 20px;
+}
+
 .ui.menu .item, .navigation .ui.menu .active.item>i.icon, .ui.link.menu .item:hover, .ui.menu .dropdown.item:hover, .ui.menu .link.item:hover, .ui.menu a.item:hover{
   color:#fff;
   font-size:14px;
@@ -58,8 +63,16 @@
   left: -100px;
 }
 
- .ui.menu .dropdown.item .menu.navbar-drop.messages-drop:after{
+.ui.menu .dropdown.item .menu.navbar-drop.messages-drop:after{
   left: 125px;
+}
+
+.ui.dropdown .menu.profile-drop{
+  left: -90px;
+}
+
+ .ui.menu .dropdown.item .menu.navbar-drop.profile-drop:after{
+  left: 150px;
 }
 
 .ui.menu .dropdown.item .menu.navbar-drop {
@@ -87,11 +100,19 @@
 }
 .navigation i.icon:before{
   font-size:28px;
-  position: absolute;
-  top: 27px;
-  right: 4px;
 }
 
+.navigation i.icon{
+  padding: 0 25px 26px 0px;
+}
+
+.navigation i.icon.profile-icon{
+  padding-right: 0px;
+}
+
+.navigation i.icon.sidebar-toggle-icon{
+  padding-right: 0px;
+}
 
 .ui.menu .ui.dropdown .menu.navbar-drop >.item {
   font-size: 13px !important;
