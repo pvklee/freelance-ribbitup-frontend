@@ -1,10 +1,10 @@
-.pushable:not(body) {
+.sidebar-right .pushable:not(body) {
     transform: none;
 }
   
-.pushable:not(body) .ui.sidebar,
-.pushable:not(body) .fixed,
-.pushable:not(body) .pusher:after {
+.sidebar-right .pushable:not(body) .ui.sidebar,
+.sidebar-right .pushable:not(body) .fixed,
+.sidebar-right .pushable:not(body) .pusher:after {
     position: fixed;
 }
 

@@ -15,10 +15,10 @@
 .sidebar-hover .title{
     color: #ffffff;
     border-bottom: 1px solid #6d6b6b;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 300;
-    margin: 0 25px 0;
-    padding-bottom: 18px;
+    margin: 15px 25px 0;
+    padding-bottom: 30px;
     padding-top: 25px;
 }
 
@@ -32,7 +32,7 @@
 .sidebar-hover .item.hover-links{
     padding: 10px 25px;
     color: #b3b3b3;
-    font-size: 13px;
+    font-size: 14px;
     display: block;
     font-weight: 300;
 }

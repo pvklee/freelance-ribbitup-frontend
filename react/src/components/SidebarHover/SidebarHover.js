@@ -20,7 +20,7 @@ const SidebarHover = memo((props) => {
         <List>
         {_.map(items, (value) => 
           {
-            return _.map(value, (keys,index) => index === "heading" ? <div key={`x-${keys.id}`}><div className="hover-title">{keys}</div></div> : index === "links" ? <div className="hover-items" key={`x-${value}`}> {_.map(keys,(indx,value)=><List.Item className="hover-links" key={`y-${value}`}>{indx}</List.Item>)}</div>:""
+            return _.map(value, (keys,index) => (index === "heading" && keys.length !== 0) ? <div key={`x-${keys.id}`}><div className="hover-title">{keys}</div></div> : index === "links" ? <div className="hover-items" key={`x-${value}`}> {_.map(keys,(indx,value)=><List.Item className="hover-links" key={`y-${value}`}>{indx}</List.Item>)}</div>:""
               )
             } 
         )}
