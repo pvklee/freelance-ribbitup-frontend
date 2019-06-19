@@ -13,6 +13,15 @@ const SidebarHover = memo((props) => {
   const items = _.map(filterdMenu[0].submenu, (value) => value);
   // console.log("items",items);
 
+  // let hoverTimeout;
+  // const handleOnMouseEnter = (e) => {
+  //   clearTimeout(hoverTimeout);
+  //   setHover(e);
+  // }
+  // const handleOnMouseLeave = (e) => {
+  //   hoverTimeout = setTimeout(() => removeHover(e), 1000);
+  // }
+
 
     return (
       <div className="sidebar-hover" onMouseEnter={setHover} onMouseLeave={removeHover}>
@@ -31,6 +40,6 @@ const SidebarHover = memo((props) => {
 
   function equalityCheck(prevProps, nextProps) {
     return isEqual(prevProps, nextProps)
-    } 
+  } 
 
 export default SidebarHover;

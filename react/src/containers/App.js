@@ -44,9 +44,13 @@ const App = memo((props)=>  {
   const [isHovering, setIsHovering] = useState({hover: false, target:""});
   const [navbarVisible, setNavbarVisible] = useState(false);
 
-
-  const removeHover = () => { setIsHovering(Object.assign({}, isHovering, {hover:false}))};
-  const setHover = (e) => {e.target.dataset.name && setIsHovering(Object.assign({}, isHovering, {hover:true, target:e.target.dataset.name }))};
+  let hoverTimeout;
+  const removeHover = () => { hoverTimeout = setTimeout(() => setIsHovering(Object.assign({}, isHovering, {hover:false})), 200)};
+  const setHover = (e) => {
+    clearTimeout(hoverTimeout);
+    e.target.dataset.name && setIsHovering(Object.assign({}, isHovering, {hover:true, target:e.target.dataset.name }));
+  };
+  
   const handleToggle = () => {setNavbarVisible(!navbarVisible)};
   const handleItemClick = (e, { name }) =>{setActiveItem(name)};
   const showSidebar = () => {setVisible(true)};

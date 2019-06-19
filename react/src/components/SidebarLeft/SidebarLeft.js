@@ -7,7 +7,7 @@ import Context from '../../containers/Context';
 import labels from "../../labels_en.json";
 
 const SidebarLeft = memo((props) => {
-  const {activeItem, handleItemClick,setHover, isHovering} = useContext(Context);
+  const {activeItem, handleItemClick,setHover, removeHover, isHovering} = useContext(Context);
   const labelValues = _.values(labels.leftSideBar);
    return(
      <div>
@@ -15,7 +15,7 @@ const SidebarLeft = memo((props) => {
      <aside className="sidebar-left">
      {_.map(labelValues, (key, value) => 
           <Menu pointing secondary vertical key={key.id}>
-          <Menu.Item name={key.menu.toLowerCase()}  data-name={key.menu.toLowerCase()}  active={activeItem === key.menu.toLowerCase()} onClick={handleItemClick} onMouseEnter={setHover} >
+          <Menu.Item name={key.menu.toLowerCase()}  data-name={key.menu.toLowerCase()}  active={activeItem === key.menu.toLowerCase()} onClick={handleItemClick} onMouseEnter={setHover} onMouseLeave={removeHover}>
             <Icon className={key.icon}/><br/><br/>
             {key.menu} 
           </Menu.Item>
