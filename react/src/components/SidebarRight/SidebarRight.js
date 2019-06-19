@@ -9,8 +9,6 @@ import SidebarForm from "./SidebarForm"
 import Context from '../../containers/Context';
 import Bugs from "./Bugs";
 
-import NavBar from '../Navbar/Navbar';
-
 import "../../styles/SidebarRight.css";
 import labels from "../../labels_en.json";
 
@@ -29,30 +27,26 @@ const SidebarRight = memo((props) => {
     { "menuItem": { key: 'support', icon:{className:"angle-down s7-ticket"}}, render: () => <Tab.Pane attached={false}> <div className="tab-content"> <Header as='h3'>{labelValues[4].menu}</Header><SidebarForm label={labelValues[4].button}/> </div></Tab.Pane> },
   ]
     return (
-        <div className="sidebar-right"> 
-        <Sidebar.Pushable as={Segment}>
-          <Sidebar
-            as={Menu}
-            animation='push'
-            direction='right'
-            inverted
-            vertical
-            visible={visible}
-          >
-          <Card className="user-info"
-            image={faker.internet.avatar()}
-            header='Elliot Baker'
-            meta={meta}
-            description='Director'
-          />
-          <Tab menu={{ text: true }} panes={panes} />
-          <Input size='large' className="search" icon={{className:"s7-search"}} placeholder='Search...' />
-          </Sidebar>
-          <Sidebar.Pusher>
-              {props.children}
-          </Sidebar.Pusher>
-
-        </Sidebar.Pushable>
+        <div className="sidebar-right">
+          <div className={`sidebar-pushable${visible ? ' sidebar-pushable-visible' : ''}`}>
+            <Sidebar
+              as={Menu}
+              direction='right'
+              inverted
+              vertical
+              visible={visible}
+            >
+              <Card className="user-info"
+                image={faker.internet.avatar()}
+                header='Elliot Baker'
+                meta={meta}
+                description='Director'
+              />
+              <Tab menu={{ text: true }} panes={panes} />
+              <Input size='large' className="search" icon={{className:"s7-search"}} placeholder='Search...' />
+            </Sidebar>
+            {props.children}
+          </div>
         </div>
     )
 }, equalityCheck)

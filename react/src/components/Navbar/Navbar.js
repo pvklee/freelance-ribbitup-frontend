@@ -60,8 +60,11 @@ function equalityCheck(prevProps, nextProps) {
         <Image className="trigger-image" avatar src={faker.internet.avatar()} /> 
       </span>
     );
+    
+
+
     return(
-    <div className="navigation">
+    <div className='navigation'>
     <Menu fixed="top">
     <Menu.Item header className="brand-name">
       <Image src={logo} centered/>
@@ -72,7 +75,7 @@ function equalityCheck(prevProps, nextProps) {
         <Dropdown.Menu className="navbar-drop">
           <Dropdown.Item>  <span className="icon s7-close-circle"></span>Parked</Dropdown.Item>
           <Dropdown.Item>  <span className="icon s7-drawer"></span>Pending</Dropdown.Item>
-          <Dropdown.Item> <span className="icon s7-light"></span> In Progress</Dropdown.Item>
+          <Dropdown.Item> <span className="icon s7-light"></span>In Progress</Dropdown.Item>
           <Dropdown.Item> <span className="icon s7-car"></span>Running</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
@@ -80,7 +83,7 @@ function equalityCheck(prevProps, nextProps) {
         <Dropdown.Menu className="navbar-drop">
           <Dropdown.Item>  <span className="icon s7-close-circle"></span>Parked</Dropdown.Item>
           <Dropdown.Item>  <span className="icon s7-drawer"></span>Pending</Dropdown.Item>
-          <Dropdown.Item> <span className="icon s7-light"></span> In Progress</Dropdown.Item>
+          <Dropdown.Item> <span className="icon s7-light"></span>In Progress</Dropdown.Item>
           <Dropdown.Item> <span className="icon s7-car"></span>Running</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
@@ -127,7 +130,7 @@ function equalityCheck(prevProps, nextProps) {
           <Dropdown.Menu className="navbar-drop profile-drop">
               <Dropdown.Item>  <span className="icon s7-user"></span>Profile</Dropdown.Item>
               <Dropdown.Item>  <span className="icon s7-config"></span>Settings</Dropdown.Item>
-              <Dropdown.Item> <span className="icon s7-help1"></span> Help</Dropdown.Item>
+              <Dropdown.Item> <span className="icon s7-help1"></span>Help</Dropdown.Item>
               <Dropdown.Item> <span className="icon s7-power"></span>Logout</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>

@@ -13,6 +13,13 @@
 }
 .navigation .ui[class*="top fixed"].menu {
   border-bottom:none;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0;
+}
+
+.navigation-visible .ui[class*="top fixed"].menu{
+  transform: translateX(-260px);
 }
 
 @media (min-width:576px){
@@ -37,11 +44,11 @@
   background: #00853E !important;
 }
 
-.navigation .ui.menu .item:not(.brand-name):focus{
+.navigation .ui.menu .active.item:not(.brand-name){
   background: rgb(0, 119, 56) !important;
 }
 
-.navigation .ui.menu .item.message-dropdown-button:focus{
+.navigation .ui.menu .active.item.message-dropdown-button{
   background: #00853E !important;
 }
 
@@ -68,19 +75,19 @@
 }
 
 .navigation .ui.dropdown .menu.messages-drop{
-  left: -100px;
+  left: -125px;
 }
 
 .navigation .ui.menu .dropdown.item .menu.navbar-drop.messages-drop:after{
-  left: 125px;
+  left: 145px;
 }
 
 .navigation .ui.dropdown .menu.profile-drop{
-  left: -90px;
+  left: -70px;
 }
 
 .navigation .ui.menu .dropdown.item .menu.navbar-drop.profile-drop:after{
-  left: 150px;
+  left: 147px;
 }
 
 .navigation .ui.menu .dropdown.item .menu.navbar-drop {
@@ -106,6 +113,15 @@
 .navigation .ui.dropdown>.dropdown.icon:before{
   content: "\e688";
 }
+
+.navigation .message-dropdown-button:hover i.icon{
+  color: rgb(255, 255, 100);
+}
+
+.navigation .active.item i.message-icon:before{
+  color: rgb(255, 255, 100);
+}
+
 .navigation i.icon:before{
   font-size:28px;
 }
@@ -136,7 +152,7 @@
   font-size: 13px !important;
   font-weight: 300 !important;
   color: #504e4e !important;
-  padding: 10px 20px !important;
+  padding: 10px 15px !important;
   min-width: 175px;
 }
 .navigation .ui.menu .ui.dropdown .menu.navbar-drop.messages-drop >.item {

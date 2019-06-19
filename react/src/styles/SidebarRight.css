@@ -1,14 +1,32 @@
-.sidebar-right .pushable:not(body) {
+/* .sidebar-right .pushable:not(body) {
     transform: none;
-}
+} */
   
-.sidebar-right .pushable:not(body) .ui.sidebar,
+/* .sidebar-right .pushable:not(body) .ui.sidebar,
 .sidebar-right .pushable:not(body) .fixed,
 .sidebar-right .pushable:not(body) .pusher:after {
     position: fixed;
+    left: 60px;
+} */
+
+.sidebar-right .sidebar-pushable .app,
+.sidebar-right .sidebar-pushable .navigation .ui[class*="top fixed"].menu,
+.sidebar-right .sidebar-pushable .ui.inverted.menu{
+    transition: transform .2s ease-out;
+}
+
+.sidebar-right .sidebar-pushable-visible .app,
+.sidebar-right .sidebar-pushable-visible .navigation .ui[class*="top fixed"].menu{
+    transform: translateX(-260px);
+}
+
+.sidebar-right .sidebar-pushable-visible .ui.inverted.menu{
+    transform: translateX(0);
 }
 
 .sidebar-right .ui.inverted.menu{
+    position: fixed;
+    transform: translateX(260px);
     background: #484747;
     font-family: "Raleway";
     font-weight:300;

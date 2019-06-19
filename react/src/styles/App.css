@@ -3,7 +3,7 @@
 */
 @media screen and (max-width: 500px){
   .app{
-    margin-top: 60px;
+    margin-top: 80px;
   }
 }
 
@@ -11,7 +11,7 @@
   display: flex;
   height: 100vh;
   position: relative;
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
 .ui.segment{
