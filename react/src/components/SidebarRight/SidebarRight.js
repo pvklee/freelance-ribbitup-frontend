@@ -13,18 +13,18 @@ import "../../styles/SidebarRight.css";
 import labels from "../../labels_en.json";
 
 const SidebarRight = memo((props) => {
-  const {visible} = useContext(Context);
+  const {visible, hideSidebar} = useContext(Context);
   const labelValues = _.values(labels.rightSidebar);
 
   const meta =(
     <span className="status"></span>
   )
   const panes = [
-    { "menuItem": { key: 'users', icon:{className:"angle-down s7-smile"}}, render: () => <Tab.Pane  attached={false}> <div className="tab-content"><Header as='h3'>{labelValues[0].menu}</Header><AnnouncementList/></div></Tab.Pane> },
-    { "menuItem": { key: 'messages', icon:{className:"angle-down s7-chat"}}, render: () => <Tab.Pane  attached={false}> <div className="tab-content"> <Header as='h3'>{labelValues[1].menu}</Header><RecentList/> <Header as='h3'>Contacts</Header> <ContactList/> </div></Tab.Pane>  },
-    { "menuItem": { key: 'view', icon:{className:"angle-down s7-look"}}, render: () => <Tab.Pane  attached={false}>  <div className="tab-content"><Header as='h3'>{labelValues[2].menu}</Header><Bugs/></div></Tab.Pane> },
-    { "menuItem": { key: 'edit', icon:{className:"angle-down s7-pen"}}, render: () => <Tab.Pane attached={false}> <div className="tab-content"> <Header as='h3'>{labelValues[3].menu}</Header><SidebarForm label={labelValues[3].button}/> </div></Tab.Pane> },
-    { "menuItem": { key: 'support', icon:{className:"angle-down s7-ticket"}}, render: () => <Tab.Pane attached={false}> <div className="tab-content"> <Header as='h3'>{labelValues[4].menu}</Header><SidebarForm label={labelValues[4].button}/> </div></Tab.Pane> },
+    { "menuItem": { key: 'users', icon:{className:"sidebar-tab-button angle-down s7-smile"}}, render: () => <Tab.Pane  attached={false}> <div className="tab-content"><Header as='h3'>{labelValues[0].menu}</Header><AnnouncementList/></div></Tab.Pane> },
+    { "menuItem": { key: 'messages', icon:{className:"sidebar-tab-button  angle-down s7-chat"}}, render: () => <Tab.Pane  attached={false}> <div className="tab-content"> <Header as='h3'>{labelValues[1].menu}</Header><RecentList/> <Header as='h3'>Contacts</Header> <ContactList/> </div></Tab.Pane>  },
+    { "menuItem": { key: 'view', icon:{className:"sidebar-tab-button angle-down s7-look"}}, render: () => <Tab.Pane  attached={false}>  <div className="tab-content"><Header as='h3'>{labelValues[2].menu}</Header><Bugs/></div></Tab.Pane> },
+    { "menuItem": { key: 'edit', icon:{className:"sidebar-tab-button angle-down s7-pen"}}, render: () => <Tab.Pane attached={false}> <div className="tab-content"> <Header as='h3'>{labelValues[3].menu}</Header><SidebarForm label={labelValues[3].button}/> </div></Tab.Pane> },
+    { "menuItem": { key: 'support', icon:{className:"sidebar-tab-button angle-down s7-ticket"}}, render: () => <Tab.Pane attached={false}> <div className="tab-content"> <Header as='h3'>{labelValues[4].menu}</Header><SidebarForm label={labelValues[4].button}/> </div></Tab.Pane> },
   ]
     return (
         <div className="sidebar-right">
@@ -42,10 +42,12 @@ const SidebarRight = memo((props) => {
                 meta={meta}
                 description='Director'
               />
-              <Tab menu={{ text: true }} panes={panes} />
+              <Tab className="sidebar-right-tab" menu={{ text: true }} panes={panes} />
               <Input size='large' className="search" icon={{className:"s7-search"}} placeholder='Search...' />
             </Sidebar>
-            {props.children}
+            <div className="navbar-app" onFocus={() => {if(visible) hideSidebar()}} onClick={() => {if(visible) hideSidebar()}}>
+              {props.children}
+            </div>
           </div>
         </div>
     )

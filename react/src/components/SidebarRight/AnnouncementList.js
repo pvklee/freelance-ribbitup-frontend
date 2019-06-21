@@ -1,6 +1,6 @@
 import React,{memo} from "react";
 import {isEqual} from "lodash";
-import {List} from 'semantic-ui-react';
+import {List, Input} from 'semantic-ui-react';
 import "../../styles/Announcement.css";
 
 const SidebarRightList = memo((props) => {
@@ -152,7 +152,6 @@ const SidebarRightList = memo((props) => {
           </List.Description>
         </List.Content>
       </List.Item>
-     
     </List>
     </div>
     )

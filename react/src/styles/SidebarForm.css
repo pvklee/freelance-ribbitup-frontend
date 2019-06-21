@@ -1,3 +1,8 @@
+.sidebar-form{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .sidebar-form .ui.form input,.sidebar-form .ui.form textarea, .sidebar-form .ui.form textarea:focus, .sidebar-form .ui.form input:focus{
     background-color: transparent;
     border-radius: 2px;

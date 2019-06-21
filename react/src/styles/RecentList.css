@@ -1,8 +1,32 @@
 
-.recent .ui.menu .ui.list .list>.item, .ui.menu .ui.list>.item{
+
+.recent .list>.item{
+    left: -15px;
+    padding: 10px 15px !important;
+    width: calc(100% + 30px);
+}
+
+.recent .ui.list .list>.item, .ui.menu .ui.list>.item{
     display: flex;
     overflow: hidden;
 }
+
+.recent .ui.list{
+    padding-left: 15px;
+}
+
+.recent .contacts-list{
+    height: calc(100vh - 580px) !important;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.recent  .list>.item:hover{
+    cursor: pointer;
+    background-color:#00853E !important;
+}
+
+
 .recent .ui.menu .ui.list .list>.item, .recent .ui.menu .ui.list>.item:hover{
     color:#999999;
 }

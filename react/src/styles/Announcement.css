@@ -5,6 +5,17 @@
     font-weight:400;
 }
 
+.announcement .ui.list{
+    padding-left: 15px;
+    height: calc(100vh - 400px) !important;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.announcement .ui.list .list>.item a:hover.header, .ui.list>.item a:hover.header{
+    color: #00853E !important;
+}
+
 .announcement .ui.list .list>.item .description, .ui.list>.item .description{
     color: #b3b3b3 !important;
     margin-top: 5px;

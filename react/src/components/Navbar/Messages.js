@@ -1,4 +1,5 @@
 import React,{useContext} from 'react';
+import faker from 'faker';
 import { Image, List } from 'semantic-ui-react';
 import "../../styles/Messages.css";
 import _ from "lodash";
@@ -13,7 +14,7 @@ const Messages = () => {
             
         {messages.length > 0 &&_.map(messages,(keys, value)=>
             <List.Item key={keys.id}>
-                <Image avatar src='https://react.semantic-ui.com/images/avatar/small/daniel.jpg' />
+                <Image avatar src={faker.internet.avatar()} />
                 <List.Content>
                 <List.Header>{keys.from}</List.Header>
                 <List.Description>

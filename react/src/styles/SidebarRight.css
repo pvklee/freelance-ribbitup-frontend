@@ -8,8 +8,6 @@
     position: fixed;
     left: 60px;
 } */
-
-
 .sidebar-right .sidebar-pushable .app,
 .sidebar-right .sidebar-pushable .navigation .ui[class*="top fixed"].menu,
 .sidebar-right .sidebar-pushable .ui.inverted.menu{
@@ -31,8 +29,10 @@
     background: #484747;
     font-family: "Raleway";
     font-weight:300;
-    overflow: hidden;
+    overflow: hidden !important;
+    height: 100vh !important;
 }
+
 
 .sidebar-right .ui.card{
     margin: 0px;
@@ -42,7 +42,7 @@
     padding: 30px 20px;
     border-bottom:none;
     background-color: #424141;
-    
+    height: 200px !important;
 }
 
 .sidebar-right .ui.card>.image, .ui.cards>.card>.image{
@@ -104,15 +104,16 @@
     /* color:#0177d7; */
 }
 
+
 .sidebar-right .ui.header{
     color: #e1e1e1;
     font-size: 15px;
     font-weight: 400;
     padding-bottom: 15px;
     border-bottom: 1px solid #6d6b6b;
-    padding-left: 5px;
-    margin-bottom: 25px;
-    margin-top: 18px;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 .sidebar-right .ui.list .list>.item .description, .ui.list>.item .description{
     color:#fff;
@@ -129,10 +130,15 @@
 
 .sidebar-right .ui.segment.active.tab{
     position: relative;
-    margin-bottom:100px;
+    padding: 0 !important;
+}
+
+
+.sidebar-right{
+    height: 100%;
 }
 .sidebar-right .ui.large.search{
-    position: fixed; 
+    position: absolute !important; 
     bottom: 0;
     right: 0;
     width: 100%;
