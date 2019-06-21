@@ -9,43 +9,43 @@ import "../../styles/Connections.css";
 const Connections = () => (
   <div className="connections">
   <List divided relaxed>
-    <List.Item>
-    <Image size="mini" src={github} centered/>
+    <List.Item className="connections-item" onClick={e => e.stopPropagation()}>
+      <Image className="connections-image" src={github}/>
       <List.Content>
-        <List.Header as='a'>GitHub</List.Header>
+        <List.Header>GitHub</List.Header>
       </List.Content>
       <List.Content floated='right'>
       <Checkbox toggle />
       </List.Content>
     </List.Item>
 
-    <List.Item>
-    <Image size="mini" src={bitbucket} centered/>
+    <List.Item className="connections-item" onClick={e => e.stopPropagation()}>
+    <Image className="connections-image" src={bitbucket} centered/>
       <List.Content>
-        <List.Header as='a'>Bit Bucket</List.Header>
+        <List.Header>Bit Bucket</List.Header>
       </List.Content>
       <List.Content floated='right'>
       <Checkbox toggle />
       </List.Content>
     </List.Item>
 
-    <List.Item>
-    <Image size="mini" src={slack} centered/>
+    <List.Item className="connections-item" onClick={e => e.stopPropagation()}>
+    <Image className="connections-image" src={slack} centered/>
       <List.Content>
-        <List.Header as='a'>Slack</List.Header>
+        <List.Header>Slack</List.Header>
       </List.Content>
       <List.Content floated='right'>
-      <Checkbox toggle />
+      <Checkbox  toggle />
       </List.Content>
     </List.Item>
 
-    <List.Item>
-    <Image size="mini" src={dribbble} centered/>
+    <List.Item className="connections-item"onClick={e => e.stopPropagation()}>
+    <Image className="connections-image" src={dribbble} centered/>
       <List.Content>
-        <List.Header as='a'>Dribbble</List.Header>
+        <List.Header>Dribbble</List.Header>
       </List.Content>
       <List.Content floated='right'>
-      <Checkbox toggle />
+      <Checkbox toggle/>
       </List.Content>
     </List.Item>
   </List>

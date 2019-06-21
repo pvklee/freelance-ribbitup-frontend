@@ -2,6 +2,30 @@
   max-height: 200px;
   overflow-y: scroll;
 }
-.messages .ui.menu .ui.dropdown.item .menu .item:not(.filtered) {
-  padding: 20px;
+
+.messages .ui.list .item {
+  padding: 10px !important;
 }
+
+.messages .ui.list .image {
+  font-size: 15pt;
+}
+
+.messages .ui.list .item:hover{
+  cursor: pointer;
+}
+
+
+.messages .ui.list .header{
+  color: #00853E;
+}
+
+.messages .ui.list .item:hover .header,
+.messages .ui.list .item:hover .description{
+  color: white !important;
+}
+
+.messages .ui.list .description {
+  color:  #484747 !important;
+}
+

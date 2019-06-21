@@ -1,5 +1,31 @@
 .connections{
-    max-height: 200px;
-    overflow-y: scroll;
-    width:270px;
+    width:100%;
   }
+
+  .connections .ui.list .item.connections-item {
+    padding: 10px !important;
+    cursor: default !important;
+  }
+
+
+  .connections .image{
+    padding-left: 1px;
+  }
+
+
+  .connections .ui.list .item.connections-item:hover{
+    background-color: rgb(242, 242, 242) !important;
+  }
+  
+  .connections .ui.list .header{
+    position: absolute;
+    color: #00853E !important;
+    padding-top: 4px;
+    left: 50px;
+  }
+  
+  
+  .connections .ui.list .description {
+    color:  #484747 !important;
+  }
+  

@@ -9,6 +9,7 @@
     left: 60px;
 } */
 
+
 .sidebar-right .sidebar-pushable .app,
 .sidebar-right .sidebar-pushable .navigation .ui[class*="top fixed"].menu,
 .sidebar-right .sidebar-pushable .ui.inverted.menu{
@@ -131,8 +132,7 @@
     margin-bottom:100px;
 }
 .sidebar-right .ui.large.search{
-    position: sticky;
-    position: -webkit-sticky;
+    position: fixed; 
     bottom: 0;
     right: 0;
     width: 100%;

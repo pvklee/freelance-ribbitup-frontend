@@ -60,8 +60,7 @@ function equalityCheck(prevProps, nextProps) {
         <Image className="trigger-image" avatar src={faker.internet.avatar()} /> 
       </span>
     );
-    
-
+  
 
     return(
     <div className='navigation'>
@@ -92,38 +91,36 @@ function equalityCheck(prevProps, nextProps) {
     </Menu.Menu>
     <Menu.Menu position="right">
       <Dropdown item icon={{className:"icon s7-comment message-icon"}} className="message-dropdown-button">
-            <Dropdown.Menu className="messages-drop navbar-drop">
-            <Dropdown.Item > Messages {"  "}<Label color='red'>{messages.length == 0 ? "0" :messages.length}</Label></Dropdown.Item>
-            
+            <Dropdown.Menu className="messages-drop">
+            <Dropdown.Item className="messages-drop-title"> Messages {"  "}<Label color='gray'>{messages.length === 0 ? "0" :messages.length}</Label></Dropdown.Item>
               <ErrorBoundary>
                 <Suspense fallback={<Loading/>}>
                     <Messages/>
                 </Suspense>
               </ErrorBoundary>
-
-            <Dropdown.Item> View All Messages</Dropdown.Item>
+            <Dropdown.Item className="view-all"> View All Messages</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
           <Dropdown item icon={{className:"icon s7-bell message-icon"}} className="message-dropdown-button">
-            <Dropdown.Menu className="navbar-drop messages-drop">
-            <Dropdown.Item >Notifications{" "}<Label color='red'>{notifications.length === 0 ? "0":notifications.length}</Label></Dropdown.Item>
+            <Dropdown.Menu className="messages-drop">
+            <Dropdown.Item className="messages-drop-title">Notifications{" "}<Label color='gray'>{notifications.length === 0 ? "0":notifications.length}</Label></Dropdown.Item>
             <ErrorBoundary>
                 <Suspense fallback={<Loading/>}>
                     <Notifications/>
                 </Suspense>
               </ErrorBoundary>
-              <Dropdown.Item>Veiw all Notification</Dropdown.Item>
+              <Dropdown.Item className="view-all">View all Notification</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
-          <Dropdown item icon={{className:"icon s7-share message-icon"}} className="message-dropdown-button">
-            <Dropdown.Menu className="navbar-drop messages-drop">
-            <Dropdown.Item >Connections</Dropdown.Item>
+          <Dropdown selectOnBlur={false} item icon={{className:"icon s7-share message-icon"}} className="message-dropdown-button">
+            <Dropdown.Menu className="messages-drop">
+            <Dropdown.Item className="messages-drop-title">Connections</Dropdown.Item>
               <ErrorBoundary>
                   <Suspense fallback={<Loading/>}>
                       <Connections/>
                   </Suspense>
               </ErrorBoundary>
-              <Dropdown.Item>View all Connections</Dropdown.Item>
+              <Dropdown.Item className="view-all">View all Connections</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
           <Dropdown item trigger={trigger} icon={{className:"angle-down s7-angle-down reduced-padding-right"}} className="profile-button">

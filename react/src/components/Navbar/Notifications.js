@@ -13,8 +13,8 @@ const Notifications = () => {
     <List.Item key={keys.id}>
         <List.Icon className={"icon s7-pin shade"} />
       <List.Content>
-        <List.Header as='a'>{keys.from}</List.Header>
-        <List.Description as='a'>{keys.message}</List.Description>
+        <List.Header>{keys.from}</List.Header>
+        <List.Description>{keys.message}</List.Description>
       </List.Content>
     </List.Item>
     )}

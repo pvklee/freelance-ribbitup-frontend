@@ -42,6 +42,7 @@
 
 .navigation .ui.menu .item:not(.brand-name):hover{
   background: #00853E !important;
+  cursor: pointer;
 }
 
 .navigation .ui.menu .active.item:not(.brand-name){
@@ -74,12 +75,13 @@
     display: none;
 }
 
+
 .navigation .ui.dropdown .menu.messages-drop{
   left: -125px;
 }
 
-.navigation .ui.menu .dropdown.item .menu.navbar-drop.messages-drop:after{
-  left: 145px;
+.navigation .ui.menu .dropdown.item .menu.messages-drop:after{
+  left: 142px !important;
 }
 
 .navigation .ui.dropdown .menu.profile-drop{
@@ -98,7 +100,9 @@
   padding: 6px 0;
 }
 
-.navigation .ui.menu .dropdown.item .menu.navbar-drop:after{
+
+.navigation .ui.menu .dropdown.item .menu.navbar-drop:after,
+.navigation .ui.menu .dropdown.item .menu.messages-drop:after{
   border-bottom: 8px solid white;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
@@ -150,14 +154,35 @@
 
 .navigation .ui.menu .ui.dropdown .menu.navbar-drop >.item {
   font-size: 13px !important;
-  font-weight: 300 !important;
+  font-weight: 400 !important;
   color: #504e4e !important;
   padding: 10px 15px !important;
   min-width: 175px;
 }
-.navigation .ui.menu .ui.dropdown .menu.navbar-drop.messages-drop >.item {
+.navigation .ui.menu .ui.dropdown .menu.messages-drop >.item {
   text-align: center;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  color: #504e4e !important;
+  padding: 12px 15px !important;
   width: 300px;
+}
+
+.navigation .ui.menu .dropdown.item .menu.navbar-drop .item:hover {
+  background-color: #00853E !important;
+  color: white !important;
+}
+
+.navigation .ui.menu .dropdown.item .item.messages-drop-title {
+  cursor: default;
+  border-bottom: 1px solid #dcdcdc;
+}
+.navigation .ui.menu .dropdown.item .item.view-all{
+  border-top: 1px solid #dcdcdc;
+}
+
+.navigation .ui.menu .dropdown.item .item.messages-drop-title:hover {
+  background-color: white !important;
 }
 
 .navigation .ui.menu .item>.label{
@@ -178,10 +203,10 @@
   width: 25px
 }
 
-.navigation .ui.menu .ui.list .list>.item,.navigation .ui.menu .ui.list>.item:first-child{
-  background: rgba(1,119,215,0.4);
+.navigation .ui.menu .ui.list .list>.item,.navigation .ui.menu div:not(.connections)>.ui.list>.item:first-child{
+  background: rgba(0, 160, 72, 0.4);
 }
 
 .navigation .ui.menu .ui.list .list>.item, .navigation .ui.menu .ui.list>.item:hover{
-  background: rgba(1,119,215,0.4);
+  background: rgba(0, 160, 72, 0.4);
 }

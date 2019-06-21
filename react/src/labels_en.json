@@ -16,7 +16,7 @@
 
     "leftSideBar":[
       {"id":"1200","menu":"Dashboard", "icon":"icon s7-monitor"}, 
-      {"id":"1300","menu":"Organisation","icon":"icon s7-diamond"}, 
+      {"id":"1300","menu":"Organization","icon":"icon s7-diamond"}, 
       {"id":"1400","menu":"Output","icon":"icon s7-graph"}, 
       {"id":"1500","menu":"Services","icon":"icon s7-box2"},
       {"id":"1600","menu":"Messages", "icon":"icon s7-mail"},
@@ -40,7 +40,7 @@
 
     {
      "id":"1300",
-     "menu":"Organisation",
+     "menu":"Organization",
       "submenu":[
           {
             "id":"1300-1",
