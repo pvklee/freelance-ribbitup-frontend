@@ -17,24 +17,8 @@ function equalityCheck(prevProps, nextProps) {
     const {visible,handlePusher,handleToggle,hideSidebar, showSidebar} = useContext(Context);
    
     return (
-    <Sidebar.Pushable as={Segment}>
-      <Sidebar
-        as={Menu}
-        animation="overlay"
-        icon="labeled"
-        inverted
-        onHide={hideSidebar}
-        vertical
-        visible={visible}
-      >
-      </Sidebar>
-
-      <Sidebar.Pusher
-        dimmed={visible}
-        onClick={handlePusher}
-        style={{ minHeight: "100vh" }}
-      > 
-      <Menu>
+      <div className='navigation'>
+      <Menu fixed="top">
           <Menu.Item>
             <Image size="mini" src={logo} />
           </Menu.Item>
@@ -44,8 +28,7 @@ function equalityCheck(prevProps, nextProps) {
           {visible ? <Menu.Item icon={{className:"icon s7-close"}} onClick={hideSidebar}></Menu.Item> : <Menu.Item icon={{className:"icon s7-menu2"}} onClick={showSidebar}></Menu.Item>}
           </Menu.Menu>
         </Menu>
-      </Sidebar.Pusher>
-    </Sidebar.Pushable>
+      </div>
   );
   }
   
