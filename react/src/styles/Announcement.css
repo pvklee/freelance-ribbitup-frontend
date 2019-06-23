@@ -1,15 +1,32 @@
+.announcement{
+    border-top: 1px solid #dcdcdc !important;
+}
+
 .announcement .ui.list .list>.item a.header, .ui.list>.item a.header {
-    color: #ffffff !important;
+    color: #616161 !important;
     font-size: 12px;
     font-family: 'Raleway', sans-serif;
     font-weight:400;
 }
 
-.announcement .ui.list{
-    padding-left: 15px;
-    height: calc(100vh - 400px) !important;
-    overflow-y: scroll;
-    overflow-x: hidden;
+.announcement .scroller{
+    height: calc(100vh - 387px);
+}
+
+.announcement .ui.list .item{
+    padding: 5px 0 !important;
+    border-bottom: 1px solid #dcdcdc !important;
+}
+
+.announcement .ui.list .item:hover{
+    background-color: #e4e4e4 !important;
+    cursor: pointer;
+}
+
+.announcement .icon{
+    padding-top: 4px !important;
+    color: #aaaaaa !important;
+    font-size: 18pt;
 }
 
 .announcement .ui.list .list>.item a:hover.header, .ui.list>.item a:hover.header{
@@ -17,7 +34,7 @@
 }
 
 .announcement .ui.list .list>.item .description, .ui.list>.item .description{
-    color: #b3b3b3 !important;
+    color: #aaaaaa !important;
     margin-top: 5px;
     font-size: 12px;
     font-family: 'Raleway', sans-serif;
@@ -27,3 +44,7 @@
     text-overflow: ellipsis;
 }
 
+
+.announcement .ui.list .list>.item a.header, .announcement .ui.list>.item a.header:hover{
+    color:#616161 !important;
+}

@@ -1,9 +1,17 @@
+.recent{
+    border-top: 1px solid #dcdcdc !important;
+}
 
+.recent .image{
+    height: 38px !important;
+    width: 38px !important;
+}
 
 .recent .list>.item{
     left: -15px;
-    padding: 10px 15px !important;
-    width: calc(100% + 30px);
+    padding: 10px 10px !important;
+    width: calc(100% + 20px);
+    border-bottom: 1px solid #dcdcdc !important;
 }
 
 .recent .ui.list .list>.item, .ui.menu .ui.list>.item{
@@ -15,15 +23,13 @@
     padding-left: 15px;
 }
 
-.recent .contacts-list{
-    height: calc(100vh - 580px) !important;
-    overflow-y: scroll;
-    overflow-x: hidden;
+.recent .scroller{
+    height: calc(100vh - 387px);
 }
 
 .recent  .list>.item:hover{
     cursor: pointer;
-    background-color:#00853E !important;
+    background-color: #e4e4e4 !important;
 }
 
 
@@ -34,5 +40,5 @@
     color: #999999;
 }
 .recent .ui.list .list>.item a.header, .recent .ui.list>.item a.header:hover{
-    color:#fff !important;
+    color:#616161 !important;
 }

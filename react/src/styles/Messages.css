@@ -1,6 +1,10 @@
 .messages{
-  max-height: 200px;
-  overflow-y: scroll;
+  /* height: 200px; */
+  max-height: 200px !important;
+}
+.messages .scroller{
+  max-height: 200px !important;
+  width: 300px;
 }
 
 .messages .ui.list .item {
@@ -20,10 +24,10 @@
   color: #00853E;
 }
 
-.messages .ui.list .item:hover .header,
+/* .messages .ui.list .item:hover .header,
 .messages .ui.list .item:hover .description{
   color: white !important;
-}
+} */
 
 .messages .ui.list .description {
   color:  #484747 !important;

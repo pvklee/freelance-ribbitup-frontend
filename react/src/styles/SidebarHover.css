@@ -29,10 +29,18 @@
     padding: 10px 25px;
 }
 
+.sidebar-hover .hover-title:hover{
+    cursor: pointer;
+}
+
 .sidebar-hover .item.hover-links{
-    padding: 10px 25px;
+    padding: 10px 35px;
     color: #b3b3b3;
     font-size: 14px;
     display: block;
     font-weight: 300;
+}
+
+.sidebar-hover .item.hover-links:hover{
+    cursor: pointer;
 }

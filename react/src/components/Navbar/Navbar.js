@@ -113,7 +113,7 @@ function equalityCheck(prevProps, nextProps) {
             </Dropdown.Menu>
           </Dropdown>
           <Dropdown selectOnBlur={false} item icon={{className:"icon s7-share message-icon"}} className="message-dropdown-button">
-            <Dropdown.Menu className="messages-drop">
+            <Dropdown.Menu className="messages-drop" >
             <Dropdown.Item className="messages-drop-title">Connections</Dropdown.Item>
               <ErrorBoundary>
                   <Suspense fallback={<Loading/>}>

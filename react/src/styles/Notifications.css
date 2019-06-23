@@ -1,6 +1,9 @@
 .notifications{
   max-height: 200px;
-  overflow-y: scroll;
+}
+.notifications .scroller{
+  max-height: 200px !important;
+  width: 300px;
 }
 
 .notifications .ui.list .item {
@@ -11,10 +14,10 @@
   cursor: pointer;
 }
 
-.notifications .ui.list .item:hover i.icon{
+/* .notifications .ui.list .item:hover i.icon{
   color: white !important;
   background-color: rgb(0, 107, 50) !important;
-}
+} */
 
 .notifications .ui.list .item:hover
 
@@ -37,10 +40,10 @@
   color: #00853E !important;
 }
 
-.notifications .ui.list .item:hover .header,
+/* .notifications .ui.list .item:hover .header,
 .notifications .ui.list .item:hover .description{
   color: white !important;
-}
+} */
 
 .notifications .ui.list .description {
   color:  #484747 !important;

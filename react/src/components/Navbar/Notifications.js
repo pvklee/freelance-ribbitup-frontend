@@ -3,11 +3,14 @@ import { List } from 'semantic-ui-react';
 import _ from "lodash";
 import Context from "../../containers/Context";
 import "../../styles/Notifications.css";
+import PerfectScrollbar from 'react-perfect-scrollbar'
+import 'react-perfect-scrollbar/dist/css/styles.css';
 
 const Notifications = () => {
   const {notifications} = useContext(Context);
   return(
   <div className="notifications">
+    <PerfectScrollbar className="scroller" options={{wheelPropagation: false}}>
   <List divided relaxed>
     {notifications.length > 0 && _.map(notifications, (keys, value)=>
     <List.Item key={keys.id}>
@@ -19,6 +22,7 @@ const Notifications = () => {
     </List.Item>
     )}
   </List>
+  </PerfectScrollbar>
   </div>
 )}
 export default Notifications
