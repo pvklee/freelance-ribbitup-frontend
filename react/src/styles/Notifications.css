@@ -6,6 +6,11 @@
   width: 300px;
 }
 
+.notifications .ui.list{
+  margin: 0 !important;
+}
+
+
 .notifications .ui.list .item {
   padding: 15px !important;
 }

@@ -22,6 +22,11 @@
     height: calc(100vh - 387px);
 }
 
+.recent .ui.list{
+    margin: 0 !important;
+  }
+  
+
 .recent  .list>.item:hover{
     cursor: pointer;
     background-color: #e4e4e4 !important;

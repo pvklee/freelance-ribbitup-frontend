@@ -13,6 +13,11 @@
     height: calc(100vh - 387px);
 }
 
+.announcement .ui.list{
+    margin: 0 !important;
+}
+  
+
 .announcement .ui.list .item{
     padding: 5px 0 !important;
     border-bottom: 1px solid #dcdcdc !important;

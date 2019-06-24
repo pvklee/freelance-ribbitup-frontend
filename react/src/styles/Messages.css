@@ -7,6 +7,10 @@
   width: 300px;
 }
 
+.messages .ui.list{
+  margin: 0 !important;
+}
+
 .messages .ui.list .item {
   padding: 10px !important;
 }

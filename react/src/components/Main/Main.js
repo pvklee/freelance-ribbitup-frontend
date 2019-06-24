@@ -2,6 +2,8 @@ import React, {memo} from 'react';
 import {isEqual} from "lodash";
 import "../../styles/Main.css";
 import {Card, Grid} from 'semantic-ui-react'
+import 'react-perfect-scrollbar/dist/css/styles.css';
+import PerfectScrollbar from 'react-perfect-scrollbar'
 
 const Main = memo(() => {
     const description = [];
