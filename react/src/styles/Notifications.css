@@ -37,7 +37,8 @@
 }
 
 .notifications .ui.list .header{
-  color: #00853E !important;
+  color: #00853E;
+  font-weight: 400 !important;
 }
 
 /* .notifications .ui.list .item:hover .header,

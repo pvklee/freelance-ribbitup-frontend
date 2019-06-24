@@ -43,6 +43,7 @@ const App = memo((props)=>  {
   const [activeItem, setActiveItem] = useState('home');
   const [isHovering, setIsHovering] = useState({hover: false, target:""});
   const [navbarVisible, setNavbarVisible] = useState(false);
+  const [rightSidebarTabIndex, setRightSidebarTabIndex] = useState(0);
 
   let hoverTimeout;
   const removeHover = () => { hoverTimeout = setTimeout(() => setIsHovering(Object.assign({}, isHovering, {hover:false})), 200)};
@@ -57,10 +58,12 @@ const App = memo((props)=>  {
   const hideSidebar = () => {setVisible(false)};
   const handleMouseHover = () => {setIsHovering(Object.assign({}, isHovering, {hover: !isHovering.hover}))};
   const handlePusher = () => {setNavbarVisible(!navbarVisible)};
-
+  const openMessagesTab = () => {showSidebar(); setRightSidebarTabIndex(1);};
+  const openNotificationsTab = () => {showSidebar(); setRightSidebarTabIndex(0);};
+  
   return (
     <Provider value={
-      {visible,messages, notifications, activeItem,isHovering,navbarVisible,showSidebar,handleItemClick,hideSidebar, handlePusher,handleToggle,handleMouseHover,setHover, removeHover}
+      {visible,messages, notifications, activeItem,isHovering,navbarVisible,showSidebar,handleItemClick,hideSidebar, handlePusher,handleToggle,handleMouseHover,setHover, removeHover, rightSidebarTabIndex, openMessagesTab, openNotificationsTab, setRightSidebarTabIndex}
       }>
         <SidebarRight>
           <NavBar/>

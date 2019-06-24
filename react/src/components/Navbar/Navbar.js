@@ -34,7 +34,7 @@ function equalityCheck(prevProps, nextProps) {
   
 
   const NavBarDesktop = memo((props) => {
-    const {visible, hideSidebar, showSidebar, messages, notifications} = useContext(Context);
+    const {visible, hideSidebar, showSidebar, messages, notifications, openMessagesTab, openNotificationsTab} = useContext(Context);
     const Messages = React.lazy(() => import('./Messages'));
     const Connections = React.lazy(() => import('./Connections'));
     const Notifications = React.lazy(() => import('./Notifications'));
@@ -81,7 +81,7 @@ function equalityCheck(prevProps, nextProps) {
                     <Messages/>
                 </Suspense>
               </ErrorBoundary>
-            <Dropdown.Item className="view-all"> View All Messages</Dropdown.Item>
+            <Dropdown.Item className="view-all" onClick={openMessagesTab}> View All Messages</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
           <Dropdown item icon={{className:"icon s7-bell message-icon"}} className="message-dropdown-button">
@@ -92,7 +92,7 @@ function equalityCheck(prevProps, nextProps) {
                     <Notifications/>
                 </Suspense>
               </ErrorBoundary>
-              <Dropdown.Item className="view-all">View all Notification</Dropdown.Item>
+              <Dropdown.Item className="view-all" onClick={openNotificationsTab}>View all Notification</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
           <Dropdown selectOnBlur={false} item icon={{className:"icon s7-share message-icon"}} className="message-dropdown-button">

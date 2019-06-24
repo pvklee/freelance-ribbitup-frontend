@@ -177,6 +177,12 @@
   width: 300px;
 }
 
+.navigation .ui.menu .ui.dropdown .menu.messages-drop .item{
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  color: #504e4e !important;
+}
+
 .navigation .ui.menu .dropdown.item .menu.navbar-drop .item:hover {
   background-color: rgb(242, 242, 242) !important;
 }

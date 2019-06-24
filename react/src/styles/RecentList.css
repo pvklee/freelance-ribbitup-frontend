@@ -8,9 +8,7 @@
 }
 
 .recent .list>.item{
-    left: -15px;
     padding: 10px 10px !important;
-    width: calc(100% + 20px);
     border-bottom: 1px solid #dcdcdc !important;
 }
 
@@ -19,9 +17,6 @@
     overflow: hidden;
 }
 
-.recent .ui.list{
-    padding-left: 15px;
-}
 
 .recent .scroller{
     height: calc(100vh - 387px);
